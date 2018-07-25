@@ -1,0 +1,11 @@
+.documentTable {
+    margin-top: 50px;
+}
+
+.documentTable > tbody th{
+    text-align: right;
+    vertical-align: top;
+}
+.documentTable > tbody > tr > td {
+    padding-left: 10px;
+}

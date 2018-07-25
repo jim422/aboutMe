@@ -1,0 +1,179 @@
+{
+  "platforms": [
+    {
+      "pid": "1",
+      "platform_name": "新浪"
+    },
+    {
+      "pid": "9",
+      "platform_name": "微信"
+    }
+  ],
+  "uploadToken": "5p68n10q89n111r8o21300505696731p",
+  "platform": {
+    "pid": "119",
+    "platform_name": "淘宝达人",
+    "platform_icon": "v1/taobao.png",
+    "platform_account_name_img": null,
+    "platform_id_img": null,
+    "platform_url_img": null,
+    "can_repeat_account_name": "2",
+    "show_a": "2",
+    "show_b": "1",
+    "can_create_campaign_at_b": "2",
+    "show_c": "2",
+    "list_sort": "109",
+    "show_for_add_execution_content": "1",
+    "popular_for_add_execution_content": "2"
+  },
+  "config": {
+    "data_screenshot": {
+      "examples": [
+        "/vol1/1/300/301/a/b/2635r515836011r8o21300505696731p/QQ%E5%9B%BE%E7%89%8720180425101605.jpg"
+      ],
+      "limit": "10",
+      "record_items": [
+        {
+          "display": "公众号会话比例",
+          "item_id": "8",
+          "needed": "1",
+          "required": "1"
+        },
+        {
+          "display": "好友转发比例",
+          "item_id": "9",
+          "needed": "1",
+          "required": "2"
+        },
+        {
+          "display": "朋友圈比例",
+          "item_id": "10",
+          "needed": "1",
+          "required": "2"
+        },
+        {
+          "display": "历史消息比例",
+          "item_id": "11",
+          "needed": "1",
+          "required": "2"
+        }
+      ],
+      "required": "1"
+    },
+    "execution_result": {
+      "img_examples": [
+        "/vol1/1/300/301/a/b/2635r515836011r8o21300505696731p/QQ%E5%9B%BE%E7%89%8720180425101605.jpg"
+      ],
+      "img_limit": 2,
+      "img_required": "1",
+      "link_prefix": ["http://", "https://"],
+      "link_required": "1"
+    }
+  },
+  "recordItems": [
+    {
+      "display": "送达人数",
+      "item_id": "4",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "图文阅读人数",
+      "item_id": "5",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "分享人数",
+      "item_id": "6",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "总阅读次数",
+      "item_id": "7",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "公众号会话比例",
+      "item_id": "8",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "好友转发比例",
+      "item_id": "9",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "朋友圈比例",
+      "item_id": "10",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "历史消息比例",
+      "item_id": "11",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "其他比例",
+      "item_id": "12",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "收藏人数",
+      "item_id": "13",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "阅读数",
+      "item_id": "14",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "转发数",
+      "item_id": "15",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "评论数",
+      "item_id": "16",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "点赞数",
+      "item_id": "17",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "播放量",
+      "item_id": "18",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "观众数",
+      "item_id": "19",
+      "needed": false,
+      "required": false
+    },
+    {
+      "display": "其他",
+      "item_id": "20",
+      "needed": false,
+      "required": false
+    }
+  ],
+  "execution_result": {},
+  "data_screenshot": {}
+}
