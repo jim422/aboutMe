@@ -20,7 +20,7 @@ define(function (require) {
 
 		//执行链接前缀
 		self.execution_result_link_prefix = ko.observableArray();
-		self.user_input_link_prefix = ko.observable(defaultConfig.execution_result_link_prefix);
+		self.user_input_link_prefix = ko.observableArray(defaultConfig.execution_result_link_prefix);
 
 		//是否需要执行截图
 		self.execution_result_img_required = ko.observable(data.execution_result.img_required || 1)

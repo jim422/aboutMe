@@ -1,11 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 .documentTable {
     margin-top: 50px;
 }
 
-.documentTable > tbody th{
+.documentTable > tbody th {
     text-align: right;
     vertical-align: top;
 }
+.documentTable > tbody td {
+    vertical-align: top;
+}
+.documentTable > tbody > tr {
+    height: 50px;
+}
 .documentTable > tbody > tr > td {
     padding-left: 10px;
+}
+.modal-large {
+    max-width: 700px;
+    height: 400px;
+}
+p {
+    margin: 0;
+}
+.add-link-button{
+    margin-top: 5px;
+}
+.alert_position {
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    margin-left: -150px;
 }

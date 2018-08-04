@@ -1,5 +1,5 @@
 define(function (require) {
-	var ko = require('knockout');
+	/*var ko = require('knockout');
 	var Model = require('./model/model.js');
 	var tpl = require('./tpl/common_modal.tpl');
 
@@ -12,5 +12,8 @@ define(function (require) {
 			$.extend(this, new Model(params))
 		},
 		template: tpl
-	})
+	})*/
+
+
+
 });

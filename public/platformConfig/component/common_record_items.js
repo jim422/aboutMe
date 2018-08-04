@@ -15,7 +15,7 @@ define(function (require) {
 	function serializeData() {
 		var self = this
 
-		$.each(self.record_items(), function (k, recordItem) {
+		self.record_items().forEach(function (recordItem, k) {
 			if (recordItem.needed == true || recordItem.required == true) {
 				recordItem.needed = recordItem.needed == true ? 1 : 2
 				recordItem.required = recordItem.required == true ? 1 : 2

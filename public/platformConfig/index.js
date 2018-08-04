@@ -1,5 +1,6 @@
 define(function (require) {
 	var ko = require('knockout');
+	var $ = require('jQuery');
 	var Model = require('./model/platformConfigModel.js');
 
 	//组件
@@ -8,9 +9,15 @@ define(function (require) {
 	require('./component/common_record_items.js');
 	require('./component/common_select.js');
 	require('./component/common_select_platfrom.js');
-	require('../module_common/modal/common_modal.js');
+	require('./component/common_attachments.js');
+	//require('../module_common/modal/common_modal.js');
 
 	require('./css/platformConfig.css');
+
+	//验证
+	var validateLink = require('./validate/validateLink');
+	var validateNumber = require('./validate/validateNumber');
+	var validatePlatform = require('./validate/validatePlatform');
 
 
 	function init() {
@@ -26,7 +33,7 @@ define(function (require) {
 
 				bindData(JSON.parse(ajax.responseText))
 			}
-		}
+		};
 
 		ajax.send();
 	}
@@ -34,20 +41,30 @@ define(function (require) {
 	function bindData(data) {
 		var viewModel = new Model(data);
 		viewModel.submit = submit;
+		viewModel.validateLink = validateLink;
+		viewModel.validateNumber = validateNumber;
+		viewModel.validatePlatform = validatePlatform;
+
 		var el = document.getElementById('root');
 
 		ko.applyBindings(viewModel, el)
 	}
 
 	function submit() {
-		var self = this
+		var self = this;
 
-		var validateResult =validateConfigItems(self.validate_list())
+		var validateResult = validateConfigItems(self.validate_list())
 
 		if (validateResult == false)return
 
-		if (viewModel.execution_result_link_required() == 2 && viewModel.execution_result_img_required() == 2) {
-			W.alert('是否需要执行链接、是否需要执行截图至少一项选择“是”')
+		if (self.execution_result_link_required() == 2 && self.execution_result_img_required() == 2) {
+			UIkit.notification({
+				message: '是否需要执行链接、是否需要执行截图至少一项选择“是”',
+				status:'danger',
+				pos: 'top-center',
+				timeout: 2000
+			});
+
 			return
 		}
 		serializeData(self.serialize_data_list())
@@ -58,6 +75,17 @@ define(function (require) {
 			}
 		})
 
+	}
+
+	function validateConfigItems(list) {
+		var result = true
+		list.forEach(function (validateFn, k) {
+			if (validateFn() == false) {
+				result = false
+				return false
+			}
+		})
+		return result
 	}
 
 

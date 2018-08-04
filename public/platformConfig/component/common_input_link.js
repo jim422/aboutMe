@@ -5,12 +5,12 @@ define(function (require) {
 
 	ko.components.register('common-input-link', {
 		viewModel: function (params) {
-			CommonComponentModel.call(this, params)
-			this.user_input = params.user_input
-			this.addInputEl = addInputEl
-			this.deleteInputEl = deleteInputEl
-			this.validate = validate
-			this.validate_list.push(validate.bind(this))
+			CommonComponentModel.call(this, params);
+			this.user_input = params.user_input;
+			this.addInputEl = addInputEl;
+			this.deleteInputEl = deleteInputEl;
+			this.validate = params.validate;
+			this.validate_list.push(params.validate.bind(this));
 			this.serialize_data_list.push(serialize.bind(this))
 		},
 		template: tpl
@@ -24,33 +24,13 @@ define(function (require) {
 		this.user_input.pop()
 	}
 
-	function validate() {
-		var self = this
-		var result = true
-		if (this.required() == true && this.user_input().length > 0) {
-			$.each(this.user_input(), function (k, v) {
-				if (v.link().replace(/(^\s+)|(\s+$)/g, '').length > 0) {
-					self.validate_tip('')
-				} else {
-					self.validate_tip(self.error_tip)
-					result = false
-					return false
-				}
-			})
-		} else if (this.required() == true && this.user_input().length == 0) {
-			self.validate_tip(self.error_tip)
-			result = false
-		} else {
-			result = true
-		}
-		return result
-	}
+
 
 	function serialize() {
 		var self = this
-		var uerInputLinkPrefix = $.map(self.user_input(), function (v, k) {
-			if (v.link().length > 0) {
-				return v.link().replace(/(^\s+)|(\s+$)/g, '')
+		var uerInputLinkPrefix = self.user_input().map(function (key, item) {
+			if (item.link().length > 0) {
+				return item.link().replace(/(^\s+)|(\s+$)/g, '')
 			}
 		})
 		self.value(uerInputLinkPrefix)

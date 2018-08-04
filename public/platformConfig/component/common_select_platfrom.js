@@ -6,12 +6,13 @@ define(function (require) {
 
 	ko.components.register('common-select-platform', {
 		viewModel: function (params) {
-			var self = this
-			CommonComponentModel.call(self, params)
-			self.platforms = params.platforms
-			self.platform_name = params.platform_name
-			self.showPlatformList = showPlatformList
-			self.validate_list.push(validate.bind(this))
+			var self = this;
+			CommonComponentModel.call(self, params);
+			self.platforms = params.platforms;
+			self.platform_name = params.platform_name;
+			self.showPlatformList = showPlatformList;
+			self.validate_list.push(params.validate.bind(this));
+			self.data_target = params.data_target;
 
 			self.value.subscribe(function (value) {
 				validate.call(self)
@@ -20,18 +21,7 @@ define(function (require) {
 		template: tpl
 	})
 
-	function validate() {
-		var result = false
 
-		if (this.value() == undefined) {
-			result = false
-			this.validate_tip(this.error_tip)
-		} else {
-			result = true
-			this.validate_tip('')
-		}
-		return result
-	}
 
 	function showPlatformList() {
 		var self = this
