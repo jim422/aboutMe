@@ -3,7 +3,7 @@ seajs.config({
 	alias: {
 		'knockout': 'node_modules/knockout/build/output/knockout-latest.js',
 		'seajs-text': 'node_modules/seajs/_site/dist/seajs-text.js',
-		'webUploader': 'node_modules/webuploader/dist/webuploader.html5only.js',
+		'webUploader': 'node_modules/webuploader/dist/webuploader.js',
 		'webuploaderCss': 'node_modules/webuploader/css/webuploader.css',
 		'jQuery': 'node_modules/jquery/dist/jquery.min.js'
 	},

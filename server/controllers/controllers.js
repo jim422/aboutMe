@@ -6,11 +6,12 @@ const fs = require('fs');
 const publics = require('./public/public.js');
 const packages = require('./packages/packages.js');
 const data = require('./data/data.js');
+const upload = require('./upload/upload.js');
 
 router.use('/public', publics.router);
 router.use('/node_modules', packages.router);
 router.use('/data', data.router);
-
+router.use('/upload', upload.router);
 
 router.get('/', function (req, res) {
 	fs.readFile('index.html', function (err, data) {

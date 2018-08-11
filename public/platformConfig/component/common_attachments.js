@@ -38,6 +38,7 @@ define(function (require) {
 			formData: {
 				token: params.token()
 			},
+			server: params.upload_url,
 			chunked: params.chunked || false,
 			chunkSize: params.chunkSize || '',
 			accepts: {
@@ -57,12 +58,12 @@ define(function (require) {
 
 
 			//删除文件
-			$(document).on('click','.js_video_delete',function () {
+			/*$(document).on('click','.js_video_delete',function () {
 				uploader.removeFile(file,true);
 				$('.'+file.id).remove();
 
 				W.EventManager.trigger('isMerged',[$('.task_video_step1'),$('.task_video_step2')])
-			});
+			});*/
 
 		};
 

@@ -54,7 +54,7 @@ define(function (require) {
 		self.validate_list = ko.observableArray()
 		self.serialize_data_list = ko.observableArray()
 		self.upload_token = ko.observable(data.uploadToken)
-		self.upload_url = ko.observable()
+		self.upload_url = ko.observable('/upload/upload');
 		self.image_upload_disable = ko.observable()
 
 		self.readonly = ko.observable(false)
