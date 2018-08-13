@@ -7,7 +7,7 @@ const urlLib = require('url');
 router.get('/*', function (req, res) {
 	let urlObj = urlLib.parse(req.url, true);
 	console.log(urlObj.pathname)
-	fs.readFile('./data' + urlObj.pathname, function (err, data) {
+	fs.readFile('./api' + urlObj.pathname, function (err, data) {
 		if (err) {
 			res.write(JSON.stringify(err))
 		} else {

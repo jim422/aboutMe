@@ -1,25 +1,24 @@
 import ko from 'knockout'
 import $ from 'jquery';
-import Model from './model/platformConfigModel.js';
+import { Model } from './model/platformConfigModel.js';
 import './css/platformConfig.css'
 //import { LocaleProvider, DatePicker, message } from 'antd';
-console.log(ko, $);
 
 //组件
+import './component/common_attachments.js';
+
 /*
 require('./component/common_input_link.js');
 require('./component/common_input_number.js');
 require('./component/common_record_items.js');
 require('./component/common_select.js');
 require('./component/common_select_platfrom.js');
-require('./component/common_attachments.js');
 
-require('./css/platformConfig.css');
 
 //验证
 var validateLink = require('./validate/validateLink');
 var validateNumber = require('./validate/validateNumber');
-var validatePlatform = require('./validate/validatePlatform');
+var validatePlatform = require('./validate/validatePlatform');*/
 
 
 function init() {
@@ -28,7 +27,7 @@ function init() {
 
 function fetchData() {
 	var ajax = new XMLHttpRequest();
-	ajax.open('get', 'data/config.json');
+	ajax.open('get', '/api/config.json');
 
 	ajax.onreadystatechange = function () {
 		if (ajax.readyState === 4 && ajax.status === 200) {
@@ -41,6 +40,7 @@ function fetchData() {
 }
 
 function bindData(data) {
+	console.log(Model);
 	var viewModel = new Model(data);
 	viewModel.submit = submit;
 	viewModel.validateLink = validateLink;
@@ -91,4 +91,4 @@ function validateConfigItems(list) {
 }
 
 
-init()*/
+init()

@@ -21,5 +21,5 @@ function validateLink() {
 }
 
 module.exprots = {
-	validateLink: validateLink,
+	validateLink: validateLink
 }
