@@ -11,6 +11,6 @@ function validatePlatform() {
 	return result
 }
 
-module.exports = {
-	validatePlatform: validatePlatform
+exports = {
+	validatePlatform
 };

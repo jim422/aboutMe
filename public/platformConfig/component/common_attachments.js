@@ -1,9 +1,8 @@
 import ko from 'knockout';
 import webUploader from 'webUploader';
-
-var tpl = require('./tpl/common_attachments.tpl');
+import tpl from './tpl/common_attachments.tpl';
 //import 'webuploaderCss';
-console.log(tpl);
+
 ko.components.register('common-attachments', {
 	viewModel: function (params) {
 		var self = this;
@@ -25,8 +24,8 @@ ko.components.register('common-attachments', {
 
 		var uploader = setUploaderCfg(self)
 	},
-	template: tpl,
-})
+	template: tpl()
+});
 
 function setUploaderCfg(params) {
 	console.log(params)

@@ -1,7 +1,6 @@
 import ko from 'knockout';
 import defaultConfig from '../constants/defaultConfig'
 
-console.log(defaultConfig);
 
 export function Model(data) {
 	var self = this;

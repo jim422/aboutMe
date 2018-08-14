@@ -2,23 +2,20 @@ import ko from 'knockout'
 import $ from 'jquery';
 import { Model } from './model/platformConfigModel.js';
 import './css/platformConfig.css'
-//import { LocaleProvider, DatePicker, message } from 'antd';
 
 //组件
 import './component/common_attachments.js';
-
-/*
-require('./component/common_input_link.js');
-require('./component/common_input_number.js');
-require('./component/common_record_items.js');
-require('./component/common_select.js');
-require('./component/common_select_platfrom.js');
+import './component/common_input_link.js';
+import './component/common_input_number.js';
+import './component/common_record_items.js';
+import './component/common_select.js';
+import './component/common_select_platfrom.js';
 
 
 //验证
-var validateLink = require('./validate/validateLink');
-var validateNumber = require('./validate/validateNumber');
-var validatePlatform = require('./validate/validatePlatform');*/
+import validateLink from './validate/validateLink';
+import validateNumber from './validate/validateNumber';
+import validatePlatform from './validate/validatePlatform';
 
 
 function init() {
@@ -40,7 +37,6 @@ function fetchData() {
 }
 
 function bindData(data) {
-	console.log(Model);
 	var viewModel = new Model(data);
 	viewModel.submit = submit;
 	viewModel.validateLink = validateLink;

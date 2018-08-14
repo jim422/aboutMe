@@ -21,6 +21,6 @@ function validateNumber() {
 	return result
 }
 
-module.exports = {
-	validateNumber: validateNumber
+exports = {
+	validateNumber
 }

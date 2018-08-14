@@ -20,6 +20,6 @@ function validateLink() {
 	return result
 }
 
-module.exprots = {
-	validateLink: validateLink
+export {
+	validateLink
 }
