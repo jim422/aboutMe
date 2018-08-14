@@ -1,5 +1,6 @@
 import ko from 'knockout'
 import $ from 'jquery';
+import  axios from 'axios';
 import { Model } from './model/platformConfigModel.js';
 import './css/platformConfig.css'
 
@@ -13,9 +14,9 @@ import './component/common_select_platfrom.js';
 
 
 //验证
-import validateLink from './validate/validateLink';
-import validateNumber from './validate/validateNumber';
-import validatePlatform from './validate/validatePlatform';
+import { validateLink } from './validate/validateLink';
+import { validateNumber } from './validate/validateNumber';
+import { validatePlatform } from './validate/validatePlatform';
 
 
 function init() {
@@ -23,17 +24,11 @@ function init() {
 }
 
 function fetchData() {
-	var ajax = new XMLHttpRequest();
-	ajax.open('get', '/api/config.json');
+	axios.get('/api/config.json')
+		.then((data) => {
+			bindData(data.data)
+		})
 
-	ajax.onreadystatechange = function () {
-		if (ajax.readyState === 4 && ajax.status === 200) {
-
-			bindData(JSON.parse(ajax.responseText))
-		}
-	};
-
-	ajax.send();
 }
 
 function bindData(data) {

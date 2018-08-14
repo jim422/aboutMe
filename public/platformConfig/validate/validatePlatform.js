@@ -11,6 +11,6 @@ function validatePlatform() {
 	return result
 }
 
-exports = {
+export {
 	validatePlatform
-};
+}

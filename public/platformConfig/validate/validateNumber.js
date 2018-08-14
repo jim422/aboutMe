@@ -21,6 +21,6 @@ function validateNumber() {
 	return result
 }
 
-exports = {
+export {
 	validateNumber
 }
