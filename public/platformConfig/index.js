@@ -2,6 +2,7 @@ import ko from 'knockout'
 import $ from 'jquery';
 import  axios from 'axios';
 import { Model } from './model/platformConfigModel.js';
+import '../../node_modules/uikit/dist/css/uikit.min.css'
 import './css/platformConfig.css'
 
 //组件

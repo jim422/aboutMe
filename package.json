@@ -10,12 +10,6 @@
     "build": "webpack",
     "start": "webpack-dev-server --open"
   },
-  "proxy": {
-    "/api": {
-      "target": "http://localhost:9090",
-      "changeOrigin": true
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jim422/aboutMe.git"
@@ -27,13 +21,18 @@
   },
   "homepage": "https://github.com/jim422/aboutMe#readme",
   "dependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
     "antd": "^3.8.1",
     "axios": "^0.18.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "express": "^4.16.3",
     "formidable": "^1.2.1",
     "jquery": "^3.3.1",
     "knockout": "^3.4.2",
     "node": "^10.7.0",
+    "uikit": "^3.0.0-rc.11",
     "webuploader": "^0.1.8"
   },
   "devDependencies": {
