@@ -14,12 +14,12 @@ class ModalModel {
 		this.showFooter = params.showFooter || true;
 		this.className = params.className;
 		this.modal = this.init(params);
-		this.callback = params.callback
+		this.callback = params.callback || $.noop
 	}
 
 	show() {
 		this.modal.show();
-		this.showCallback();
+		this.callback();
 	}
 
 	hidden() {

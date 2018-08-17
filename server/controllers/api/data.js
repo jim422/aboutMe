@@ -6,7 +6,7 @@ const urlLib = require('url');
 
 router.get('/*', function (req, res) {
 	let urlObj = urlLib.parse(req.url, true);
-	console.log(urlObj.pathname)
+	res.writeHead(200, {'Content-Type': 'text/plain;charset=utf-8'});
 	fs.readFile('./api' + urlObj.pathname, function (err, data) {
 		if (err) {
 			res.write(JSON.stringify(err))

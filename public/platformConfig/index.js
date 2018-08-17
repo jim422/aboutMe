@@ -39,7 +39,7 @@ function bindData(data) {
 	viewModel.validateLink = validateLink;
 	viewModel.validateNumber = validateNumber;
 	viewModel.validatePlatform = validatePlatform;
-	viewModel.showPlatformList = showPlatformList
+	viewModel.showPlatformList = showPlatformList;
 
 	var el = document.getElementById('root');
 	ko.applyBindings(viewModel, el)
@@ -84,10 +84,12 @@ function validateConfigItems(list) {
 }
 
 function showPlatformList() {
+	console.log(this)
 	var modal = new ModalModel({
 		id: 'platformList'
 	});
-	modal.show()
+	modal.show();
+	console.log(modal)
 }
 
 init();
