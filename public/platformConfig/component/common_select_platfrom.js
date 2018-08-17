@@ -1,6 +1,7 @@
 import ko from 'knockout'
 import tpl from './tpl/common_select_platform.tpl'
 import { CommonComponentModel } from './model/common_component_model.js';
+import '../css/modal.css'
 
 ko.components.register('common-select-platform', {
 	viewModel: function (params) {
@@ -8,7 +9,7 @@ ko.components.register('common-select-platform', {
 		CommonComponentModel.call(self, params);
 		self.platforms = params.platforms;
 		self.platform_name = params.platform_name;
-		self.showPlatformList = showPlatformList;
+		self.showPlatformList = params.showPlatformList;
 		self.validate_list.push(params.validate.bind(this));
 		self.data_target = params.data_target;
 

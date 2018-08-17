@@ -1,7 +1,8 @@
 import ko from 'knockout'
-import $ from 'jquery';
 import  axios from 'axios';
 import { Model } from './model/platformConfigModel.js';
+import { ModalModel } from '../module_common/modal/model/model.js'
+import UIkit from 'uikit';
 import '../../node_modules/uikit/dist/css/uikit.min.css'
 import './css/platformConfig.css'
 
@@ -19,11 +20,11 @@ import { validateLink } from './validate/validateLink';
 import { validateNumber } from './validate/validateNumber';
 import { validatePlatform } from './validate/validatePlatform';
 
+window.ko = ko;
 
 function init() {
 	fetchData()
 }
-
 function fetchData() {
 	axios.get('/api/config.json')
 		.then((data) => {
@@ -38,18 +39,18 @@ function bindData(data) {
 	viewModel.validateLink = validateLink;
 	viewModel.validateNumber = validateNumber;
 	viewModel.validatePlatform = validatePlatform;
+	viewModel.showPlatformList = showPlatformList
 
 	var el = document.getElementById('root');
-
 	ko.applyBindings(viewModel, el)
 }
 
 function submit() {
 	var self = this;
 
-	var validateResult = validateConfigItems(self.validate_list())
+	var validateResult = validateConfigItems(self.validate_list());
 
-	if (validateResult == false) return
+	if (validateResult == false) return;
 
 	if (self.execution_result_link_required() == 2 && self.execution_result_img_required() == 2) {
 		UIkit.notification({
@@ -72,15 +73,22 @@ function submit() {
 }
 
 function validateConfigItems(list) {
-	var result = true
+	var result = true;
 	list.forEach(function (validateFn, k) {
 		if (validateFn() == false) {
-			result = false
+			result = false;
 			return false
 		}
-	})
+	});
 	return result
 }
 
+function showPlatformList() {
+	var modal = new ModalModel({
+		id: 'platformList'
+	});
+	modal.show()
+}
 
-init()
+init();
+

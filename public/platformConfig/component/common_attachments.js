@@ -28,7 +28,6 @@ ko.components.register('common-attachments', {
 });
 
 function setUploaderCfg(params) {
-	console.log(params)
 	var uploader = webUploader.create({
 		pick: {
 			id: '#' + params.id + ' .js_upload',

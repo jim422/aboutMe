@@ -1,21 +1,16 @@
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" id="{* id *}">
-    <div class="modal-dialog modal-dialog-centered {* className *}" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">
-                    {* title *}
-                </h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                {* content *}
-            </div>
-            <div class="modal-footer" data-bind="visible: showFooter">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" >{* onCancelText *}</button>
-                <button type="button" class="btn btn-primary">{* onOkText *}</button>
-            </div>
+<div id="" uk-model class="js_modal_id">
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h2 class="uk-modal-title js_modal_title                                ">选择平台</h2>
+        </div>
+        <div class="uk-modal-body js_modal_content">
+
+        </div>
+
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close">关闭</button>
+            <button class="uk-button uk-button-primary">确认</button>
         </div>
     </div>
 </div>

@@ -1,48 +1,49 @@
-define(function (require) {
-	/*var ko = require('knockout');*/
+import UIkit from 'uikit'
+import $ from 'jquery'
+import tpl from '../tpl/common_modal.tpl'
+class ModalModel {
+	constructor(params = {}) {
+		this.id = params.id || 'modal';
+		this.width = params.width || '100%';
+		this.height = params.height || '100%';
+		this.content = params.content;
+		this.onOk = params.onOk;
+		this.title = params.title;
+		this.onOkText = params.onOkText || '确认';
+		this.onCancelText = params.onCancelText || '关闭';
+		this.showFooter = params.showFooter || true;
+		this.className = params.className;
+		this.modal = this.init(params);
+		this.callback = params.callback
+	}
 
-	function Model(params) {
-		var self = this;
+	show() {
+		this.modal.show();
+		this.showCallback();
+	}
 
-		/*self.id = ko.observable(params.id);
-		self.width = ko.observable(params.width || '100%');
-		self.height = ko.observable(params.height || '100%');
-		self.content = ko.observable(params.content);
-		self.onOk = params.onOk;
-		self.title = params.title;
-		self.onOkText = params.onOkText;
-		self.onCancelText = params.onCancelText;
-		self.showFooter = params.showFooter || true;
-		self.className = params.className*/
+	hidden() {
+		this.modal.hidden();
+		this.hiddenCallback()
+	}
 
-		var defaultOpt = {
-			id: 'modal',
-			width: '200px',
-			height: '200px',
-			content: '',
-			title: '',
-			onOkText: '',
-			onCancelText: '',
-			className: '',
-			onOk: function () {
+	init(params) {
+		if (!UIkit.modal(`#${params.id}`)) {
+			$('body').append(tpl());
+			$('.js_modal_id').attr({
+				id: params.id
+			});
+			var el = UIkit.modal(`#${params.id}`).el;
 
-			},
-			onCancel: function () {
-
-			}
+			$(el).find('.js_modal_title').html(params.title);
+			$(el).find('.js_modal_content').html(params.content);
 		}
+		return UIkit.modal(`#${params.id}`)
 	}
 
-	Model.prototype.confirmHandler = function () {
-		console.log(this)
-	}
-
-	Model.prototype.cancelHandler = function () {
-		console.log(this)
-	}
+}
 
 
-	return Model
-
-
-});
+export {
+	ModalModel
+};

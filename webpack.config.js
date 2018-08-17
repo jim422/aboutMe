@@ -45,7 +45,7 @@ module.exports = {
 				loader: 'babel-loader',
 				options: {
 					presets: ['@babel/preset-env'],
-					plugins: [require('@babel/plugin-transform-object-super')]
+					plugins: [require('@babel/plugin-transform-object-super'),'@babel/plugin-transform-runtime']
 				}
 			}
 		}]
