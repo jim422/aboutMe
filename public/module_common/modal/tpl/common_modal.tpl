@@ -2,7 +2,7 @@
     <div class="uk-modal-dialog">
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <div class="uk-modal-header">
-            <h2 class="uk-modal-title js_modal_title                                ">选择平台</h2>
+            <h2 class="uk-modal-title js_modal_title"></h2>
         </div>
         <div class="uk-modal-body js_modal_content">
 

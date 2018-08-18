@@ -5,7 +5,7 @@ import defaultConfig from '../constants/defaultConfig'
 export function Model(data) {
 	var self = this;
 
-	self.platforms = data.platforms;
+	self.platformList = data.platformList;
 	self.recordItems = data.recordItems;
 	self.uploadToken = data.uploadToken;
 	self.platform = data.platform;

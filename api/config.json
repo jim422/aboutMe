@@ -1,5 +1,5 @@
 {
-  "platforms": [
+  "platformList": [
     {
       "pid": "1",
       "platform_name": "新浪"
@@ -7,12 +7,44 @@
     {
       "pid": "9",
       "platform_name": "微信"
+    },
+    {
+      "pid": "115",
+      "platform_name": "抖音"
+    },
+    {
+      "pid": "116",
+      "platform_name": "火山小视频"
+    },
+    {
+      "pid": "24",
+      "platform_name": "秒拍"
+    },
+    {
+      "pid": "25",
+      "platform_name": "美拍"
+    },
+    {
+      "pid": "26",
+      "platform_name": "头条"
+    },
+    {
+      "pid": "103",
+      "platform_name": "快手"
+    },
+    {
+      "pid": "113",
+        "platform_name": "虎牙"
+    },
+    {
+      "pid": "105",
+      "platform_name": "映客"
     }
   ],
   "uploadToken": "5p68n10q89n111r8o21300505696731p",
   "platform": {
-    "pid": "119",
-    "platform_name": "淘宝达人",
+    "pid": "",
+    "platform_name": "",
     "platform_icon": "v1/taobao.png",
     "platform_account_name_img": null,
     "platform_id_img": null,

@@ -33,7 +33,7 @@ class ModalModel {
 			$('.js_modal_id').attr({
 				id: params.id
 			});
-			var el = UIkit.modal(`#${params.id}`).el;
+			var el = UIkit.modal(`#${params.id}`).$el;
 
 			$(el).find('.js_modal_title').html(params.title);
 			$(el).find('.js_modal_content').html(params.content);

@@ -1,9 +1,11 @@
 import ko from 'knockout'
-import  axios from 'axios';
+import axios from 'axios';
+import $ from 'jquery';
 import { Model } from './model/platformConfigModel.js';
 import { ModalModel } from '../module_common/modal/model/model.js'
 import UIkit from 'uikit';
 import '../../node_modules/uikit/dist/css/uikit.min.css'
+import '../assets/css/index.css'
 import './css/platformConfig.css'
 
 //组件
@@ -13,7 +15,7 @@ import './component/common_input_number.js';
 import './component/common_record_items.js';
 import './component/common_select.js';
 import './component/common_select_platfrom.js';
-
+import './component/common_platform_list.js';
 
 //验证
 import { validateLink } from './validate/validateLink';
@@ -83,14 +85,28 @@ function validateConfigItems(list) {
 	return result
 }
 
+var modal;
 function showPlatformList() {
-	console.log(this)
-	var modal = new ModalModel({
-		id: 'platformList'
-	});
-	modal.show();
-	console.log(modal)
+
+	if (!UIkit.modal('#platformList')) {
+		modal = new ModalModel({
+			title: '选择平台',
+			id: 'platformList',
+			content: '<common-platform-list params="data: $data"></common-platform-list>'
+		});
+		modal.show();
+
+		var viewModel = {
+			platform_id: this.platform_id,
+			platform_name: this.platform_name,
+			platform_list: this.platformList
+		};
+
+		ko.applyBindings(viewModel, $(`#${modal.id}`)[0])
+	} else {
+		modal.show()
+	}
+
 }
 
 init();
-
