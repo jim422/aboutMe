@@ -87,26 +87,33 @@ function validateConfigItems(list) {
 
 var modal;
 function showPlatformList() {
-
+	var self = this;
 	if (!UIkit.modal('#platformList')) {
+		var viewModel = {
+			platform_id: ko.observable(),
+			platform_name: ko.observable(),
+			platform_list: this.platformList
+		};
+
 		modal = new ModalModel({
 			title: '选择平台',
 			id: 'platformList',
-			content: '<common-platform-list params="data: $data"></common-platform-list>'
+			content: '<common-platform-list params="data: $data"></common-platform-list>',
+			confirmCallback: confirmCallback.bind(self, viewModel)
 		});
-		modal.show();
 
-		var viewModel = {
-			platform_id: this.platform_id,
-			platform_name: this.platform_name,
-			platform_list: this.platformList
-		};
+		modal.show();
 
 		ko.applyBindings(viewModel, $(`#${modal.id}`)[0])
 	} else {
 		modal.show()
 	}
 
+}
+
+function confirmCallback(selected) {
+	this.platform_id(selected.platform_id());
+	this.platform_name(selected.platform_name());
 }
 
 init();

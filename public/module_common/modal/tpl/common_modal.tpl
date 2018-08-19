@@ -10,7 +10,7 @@
 
         <div class="uk-modal-footer uk-text-right">
             <button class="uk-button uk-button-default uk-modal-close">关闭</button>
-            <button class="uk-button uk-button-primary">确认</button>
+            <button class="uk-button uk-button-primary js_modal_confirm" data-bind="">确认</button>
         </div>
     </div>
 </div>

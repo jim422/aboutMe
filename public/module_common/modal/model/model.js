@@ -14,17 +14,16 @@ class ModalModel {
 		this.showFooter = params.showFooter || true;
 		this.className = params.className;
 		this.modal = this.init(params);
-		this.callback = params.callback || $.noop
+		this.confirmCallback = params.confirmCallback || $.noop
 	}
 
 	show() {
+		console.log('show')
 		this.modal.show();
-		this.callback();
 	}
 
 	hidden() {
 		this.modal.hidden();
-		this.hiddenCallback()
 	}
 
 	init(params) {
@@ -37,6 +36,11 @@ class ModalModel {
 
 			$(el).find('.js_modal_title').html(params.title);
 			$(el).find('.js_modal_content').html(params.content);
+
+			UIkit.util.on('.js_modal_confirm', 'click', function () {
+				params.confirmCallback();
+				UIkit.modal(`#${params.id}`).hide()
+			})
 		}
 		return UIkit.modal(`#${params.id}`)
 	}
