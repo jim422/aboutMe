@@ -1,7 +1,7 @@
 import ko from 'knockout';
 import webUploader from 'webUploader';
 import tpl from './tpl/common_attachments.tpl';
-//import 'webuploaderCss';
+import '../../../node_modules/webuploader/dist/webuploader.css';
 
 ko.components.register('common-attachments', {
 	viewModel: function (params) {

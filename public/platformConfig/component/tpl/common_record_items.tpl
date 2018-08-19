@@ -14,8 +14,8 @@
         <!-- ko foreach: record_items -->
         <tr>
             <th data-bind="text: display"></th>
-            <td><input type="checkbox" data-bind="checked: needed"></td>
-            <td><input type="checkbox" data-bind="checked: required"></td>
+            <td><input type="checkbox" data-bind="checked: needed" class="uk-checkbox"></td>
+            <td><input type="checkbox" data-bind="checked: required" class="uk-checkbox"></td>
         </tr>
 
         <!-- /ko -->

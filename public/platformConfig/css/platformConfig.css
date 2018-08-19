@@ -56,3 +56,18 @@ p {
 .cursor_pointer {
     cursor: pointer;
 }
+.documentTable .webuploader-pick {
+    background-color: #1e87f0;
+    height: 30px;
+    padding: 0;
+    width: 60px;
+    font-size: .875rem;
+    line-height: 28px;
+}
+.documentTable .record_items  th {
+    text-align: center;
+    width: 120px;
+}
+.documentTable .record_items td {
+    text-align: center;
+}
