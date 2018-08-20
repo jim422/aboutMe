@@ -18,10 +18,17 @@ import './component/common_select_platfrom.js';
 import './component/common_platform_list.js';
 
 //验证
-import { validateLink } from './validate/validateLink';
-import { validateNumber } from './validate/validateNumber';
-import { validatePlatform } from './validate/validatePlatform';
+import { validateAll} from './validate/validate_all';
+import { validateLink } from './validate/validate_link';
+import { validateNumber } from './validate/validate_number';
+import { validatePlatform } from './validate/validate_platform';
 
+//序列化
+import { serializeData } from './serialize/serialize_data';
+import { serializeRecordItems } from './serialize/serialize_record_items';
+import { serializeLink } from './serialize/serialize_link';
+
+//为启用knockout插件把knockout 赋值给全局，
 window.ko = ko;
 
 function init() {
@@ -42,6 +49,8 @@ function bindData(data) {
 	viewModel.validateNumber = validateNumber;
 	viewModel.validatePlatform = validatePlatform;
 	viewModel.showPlatformList = showPlatformList;
+	viewModel.serializeLink = serializeLink;
+	viewModel.serializeRecordItems = serializeRecordItems;
 
 	var el = document.getElementById('root');
 	ko.applyBindings(viewModel, el)
@@ -50,7 +59,7 @@ function bindData(data) {
 function submit() {
 	var self = this;
 
-	var validateResult = validateConfigItems(self.validate_list());
+	var validateResult = validateAll(self.validate_list());
 
 	if (validateResult == false) return;
 
@@ -59,30 +68,21 @@ function submit() {
 			message: '是否需要执行链接、是否需要执行截图至少一项选择“是”',
 			status: 'danger',
 			pos: 'top-center',
-			timeout: 2000,
+			timeout: 2000
 		});
 
 		return
 	}
-	serializeData(self.serialize_data_list())
+	var data = serializeData(self.serialize_data_list());
+	console.log(data);
 
-	W.confirm('确认提交该平台配置信息？', function (sure) {
-		if (sure) {
-			fetchConfigItems()
-		}
-	})
-
+	UIkit.modal.confirm('确认提交该平台配置信息？').then(() => {
+		fetchConfigItems(data)
+	});
 }
 
-function validateConfigItems(list) {
-	var result = true;
-	list.forEach(function (validateFn, k) {
-		if (validateFn() == false) {
-			result = false;
-			return false
-		}
-	});
-	return result
+function fetchConfigItems() {
+	axios.post('')
 }
 
 var modal;

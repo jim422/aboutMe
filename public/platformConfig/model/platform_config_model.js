@@ -6,7 +6,6 @@ export function Model(data) {
 	var self = this;
 
 	self.platformList = data.platformList;
-	self.recordItems = data.recordItems;
 	self.uploadToken = data.uploadToken;
 	self.platform = data.platform;
 	self.data_screenshot = {};

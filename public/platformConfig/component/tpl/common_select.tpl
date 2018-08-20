@@ -3,7 +3,7 @@
 </th>
 <td>
     <div class="uk-form-controls">
-        <select class="uk-select" data-bind="options: select_items, value: value,optionsValue: 'id', optionsText: 'text'">
+        <select class="uk-select uk-form-width-small" data-bind="options: select_items, value: value,optionsValue: 'id', optionsText: 'text'">
         </select>
     </div>
     <p></p>
