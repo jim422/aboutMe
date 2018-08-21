@@ -71,3 +71,37 @@ p {
 .documentTable .record_items td {
     text-align: center;
 }
+.fileList > li {
+    width: 110px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.fileList > li p.title{
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    line-height: 2em;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.fileList > li div.file-panel {
+    display: none;
+    position: absolute;
+    top:  87px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    line-height: 2em;
+    font-size: 12px;
+    color: white;
+}
+.fileList > li:hover p.title, .fileList > li:hover div.file-panel{
+    display: block;
+}

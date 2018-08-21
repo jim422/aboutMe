@@ -1,5 +1,5 @@
 import ko from 'knockout';
-import webUploader from 'webUploader';
+import webUploader from 'webuploader';
 import tpl from './tpl/common_attachments.tpl';
 import '../../../node_modules/webuploader/dist/webuploader.css';
 
@@ -9,14 +9,10 @@ ko.components.register('common-attachments', {
 		Object.assign(self, params);
 		self.upload_url = params.upload_url;
 		self.upload_limit = params.upload_limit || 1;
-		self.img_examples = params.img_examples || ko.observableArray();
-		self.is_show_content_tip = params.is_show_content_tip || false;
 
-		self.is_show_example_tips = params.is_show_example_tips || ko.observable(false);
-
-		self.content_tip = self.content_tip;
-		self.validate_tip = self.validate_tip;
-
+		self.content_tip = params.content_tip;
+		self.validate_tip = params.validate_tip;
+		self.attachments_list_for_show = ko.observableArray([]);
 		/*if (self.validate == undefined) {
 			self.validate = validate
 		}
@@ -48,21 +44,21 @@ function setUploaderCfg(params) {
 		disableGlobalDnd: params.disableGlobalDnd || true,
 		fileNumLimit: params.upload_limit,
 		fileSingleSizeLimit: params.max_file_size * 1024 * 1024,
-	})
+	});
 
 	uploader.onFileQueued = function (file) {
 		//加入队列前触发
-		params.attachment.push(file)
+		uploader.makeThumb(file, function (err, src) {
+			file.src = src;
 
+			params.attachments_list_for_show.push(file)
+		});
+	};
 
-		//删除文件
-		/*$(document).on('click','.js_video_delete',function () {
-			uploader.removeFile(file,true);
-			$('.'+file.id).remove();
-
-			W.EventManager.trigger('isMerged',[$('.task_video_step1'),$('.task_video_step2')])
-		});*/
-
+	uploader.onUploadSuccess = function (file, response) {
+		if (response.code === 1000) {
+			params.attachment.push(response.data.filePath)
+		}
 	};
 
 	return uploader;
