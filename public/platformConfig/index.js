@@ -1,7 +1,7 @@
 import ko from 'knockout'
 import axios from 'axios';
 import $ from 'jquery';
-import { Model } from './model/platformConfigModel.js';
+import { Model } from './model/platform_config_model.js';
 import { ModalModel } from '../module_common/modal/model/model.js'
 import UIkit from 'uikit';
 import '../../node_modules/uikit/dist/css/uikit.min.css'

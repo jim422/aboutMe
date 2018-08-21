@@ -1,26 +1,39 @@
 const express = require('express');
 const router = express.Router();
-
-const urlLib = require('url');
-const fs = require('fs');
-const formidable = require('formidable');
-const util = require('util');
-
+const server = require('http');
+const path = require('path');
 router.get('/upload', function (req, res) {
 
 })
 
 router.post('/upload', function (req, res) {
-	var form = new formidable.IncomingForm();
+	var file = req.files.file;
+	res.writeHead(200);
+	console.log(path.resolve(__dirname, '../../attachments/'));
+	var filePath = path.resolve(__dirname, '../../attachments/' + file.md5 + file.name);
 
-	form.parse(req, function(err, fields, files) {
-		res.writeHead(200, {'content-type': 'text/plain'});
-		res.write('received upload:\n\n');
-		res.end(util.inspect({fields: fields, files: files}));
-		console.log(files)
+	file.mv(filePath, function (err) {
+		if (err) {
+			console.log(err)
+			res.write({
+				code: 0,
+				msg: '上传失败'
+			})
+		} else {
+			console.log();
+			res.write(JSON.stringify({
+				code: 1000,
+				msg: '上传成功',
+				data: {
+					filePath: 'fsdf'
+				}
+			}));
+		}
+
+		res.end()
 	});
-})
+});
 
 module.exports = {
 	router: router
-}
+};

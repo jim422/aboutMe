@@ -1,5 +1,5 @@
 import ko from 'knockout';
-import defaultConfig from '../constants/defaultConfig'
+import defaultConfig from '../constants/default_config'
 
 
 export function Model(data) {
