@@ -1,7 +1,7 @@
 function validatePlatform() {
 	var result = false;
 
-	if (this.value() == undefined) {
+	if (this.value() == '') {
 		result = false;
 		this.validate_tip(this.error_tip)
 	} else {

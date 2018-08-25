@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const publics = require('./public/public.js');
 const packages = require('./packages/packages.js');
-const api = require('./api/data.js');
+const api = require('./api/index.js');
 const upload = require('./upload/upload.js');
 
 router.use('/public', publics.router);

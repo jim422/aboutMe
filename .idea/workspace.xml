@@ -2,13 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/constants/useless_fields.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_attachments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_attachments.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/9deb9e3593274e5a8b290e0ec634c960timg.jpeg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/b288aae286925fce1b24ed30bb3bdd1aWX20180821-215240@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/c652b794faa6ab27538edd1808a48ebbWX20180406-125441@2x.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/api/config.json" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_attachments.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_input_link.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_input_link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_input_number.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_input_number.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_platform_list.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_platform_list.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_record_items.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_record_items.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_select.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_select.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_select_platfrom.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_select_platfrom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/model/common_component_model.js" afterPath="$PROJECT_DIR$/public/platform_config/component/model/common_component_model.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_attachments.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_input_link.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_input_link.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_input_number.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_input_number.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_platform_list.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_platform_list.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_record_items.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_record_items.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_select.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_select.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_select_platform.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_select_platform.tpl" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/constants/default_config.js" afterPath="$PROJECT_DIR$/public/platform_config/constants/default_config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/css/modal.css" afterPath="$PROJECT_DIR$/public/platform_config/css/modal.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" afterPath="$PROJECT_DIR$/public/platform_config/css/platform_config.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/index.js" afterPath="$PROJECT_DIR$/public/platform_config/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/model/platform_config_model.js" afterPath="$PROJECT_DIR$/public/platform_config/model/platform_config_model.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_link.js" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_record_items.js" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_record_items.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_all.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_all.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_link.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_link.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_number.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_number.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_platform.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_platform.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/controllers/api/data.js" afterPath="$PROJECT_DIR$/server/controllers/api/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/index.css" afterPath="$PROJECT_DIR$/public/assets/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" afterPath="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" afterPath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" afterPath="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/upload/upload.js" afterPath="$PROJECT_DIR$/server/controllers/upload/upload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/controllers.js" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,57 +58,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/platformConfig/index.js">
+        <entry file="file://$PROJECT_DIR$/public/platform_config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1210">
-              <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+            <state relative-caret-position="110">
+              <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
-                <element signature="e#359#402#0" expanded="true" />
-                <element signature="e#675#728#0" expanded="true" />
-                <element signature="e#919#978#0" expanded="true" />
+                <element signature="e#428#471#0" expanded="true" />
+                <element signature="e#744#797#0" expanded="true" />
+                <element signature="e#1059#1118#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/upload/upload.js">
+      <file leaf-file-name="serialize_data.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            <state relative-caret-position="264">
+              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_attachments.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_attachments.js">
+      <file leaf-file-name="platform_config.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/platform_config/css/platform_config.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="platformConfig.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/platformConfig/css/platformConfig.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+            <state relative-caret-position="1958">
+              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/assets/css/index.css">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="platform_config_model.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/platform_config/model/platform_config_model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,30 +125,38 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2021">
-              <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
+            <state relative-caret-position="1663">
+              <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common_attachments.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#td#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/api/data.js">
+      <file leaf-file-name="get_config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="67" />
+            <state relative-caret-position="352">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="set_config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,9 +177,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>console.log</find>
-      <find>$</find>
-      <find>create</find>
       <find>pick</find>
       <find>webuploader.js</find>
       <find>require('web</find>
@@ -153,6 +204,9 @@
       <find>record_items</find>
       <find>\&lt;li id\=\&quot;\' \+ file\.id \+ \'\&quot;\&gt;\' \+\n                        \'\&lt;p class\=\&quot;title\&quot;\&gt;\' \+ file\.name \+ \'\&lt;\/p\&gt;\' \+\n                        \'\&lt;p class\=\&quot;imgWrap\&quot;\&gt;\&lt;\/p\&gt;\'\+\n                        \'\&lt;p class\=\&quot;progress\&quot;\&gt;\&lt;span\&gt;\&lt;\/span\&gt;\&lt;\/p\&gt;\' \+\n                        \'\&lt;\/li\&gt;</find>
       <find>+</find>
+      <find>attachment</find>
+      <find>attachments</find>
+      <find>platformConfig</find>
     </findStrings>
     <replaceStrings>
       <replace>this</replace>
@@ -167,6 +221,7 @@
       <dir>$PROJECT_DIR$/public/platformConfig</dir>
       <dir>$PROJECT_DIR$/public/platformConfig/component</dir>
       <dir>$PROJECT_DIR$/public</dir>
+      <dir>$PROJECT_DIR$/public/platform_config</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -175,21 +230,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.html5only.js" />
-        <option value="$PROJECT_DIR$/public/static/seajsConfig.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/dist/index.html" />
-        <option value="$PROJECT_DIR$/public/platformConfig/constants/defaultConfig.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/component/model/common_component_model.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/component/common_select.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/component/common_input_number.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/validate/validatePlatform.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/validate/validateNumber.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/validate/validateLink.js" />
         <option value="$PROJECT_DIR$/public/module_common/modal/common_modal.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/server/controllers/api/data.js" />
         <option value="$PROJECT_DIR$/public/assets/css.css" />
         <option value="$PROJECT_DIR$/api/config.json" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/common_platform_list.js" />
@@ -201,31 +244,43 @@
         <option value="$PROJECT_DIR$/public/platformConfig/css/modal.css" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/tpl/common_record_items.tpl" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/tpl/common_select.tpl" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/util/serializeData.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/serialize.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/common_input_link.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/common_record_items.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/validate/validate_all.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/serialize/serialize_data.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/serialize/serialize_link.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/model/platformConfigModel.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/serialize/serialize_record_items.js" />
-        <option value="$PROJECT_DIR$/public/platformConfig/index.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/model/platform_config_model.js" />
         <option value="events.js" />
         <option value="_stream_writable.js" />
         <option value="internal/fs/streams.js" />
         <option value="internal/process/next_tick.js" />
-        <option value="$PROJECT_DIR$/server/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/server/controllers/upload/upload.js" />
         <option value="$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/public/assets/css/index.css" />
-        <option value="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" />
-        <option value="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" />
+        <option value="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" />
+        <option value="$PROJECT_DIR$/public/platformConfig/validate/validate_attachments.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/validate/validate_platform.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/validate/validate_all.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/validate/validate_link.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/serialize/serialize_attachments.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/constants/useless_fields.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/serialize/serialize_data.js" />
+        <option value="$PROJECT_DIR$/public/platformConfig/index.js" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api/data.js" />
+        <option value="$PROJECT_DIR$/server/controllers/controllers.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api/platform_config/index.js" />
+        <option value="$PROJECT_DIR$/server/controllers/api/index.js" />
+        <option value="$PROJECT_DIR$/public/platform_config/index.js" />
+        <option value="$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js" />
       </list>
     </option>
   </component>
@@ -296,38 +351,21 @@
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module_common" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="module_common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modal" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="server" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="attachments" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="serialize" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -354,11 +392,11 @@
       <recent name="$PROJECT_DIR$/public/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/controllers/api/platform_config" />
       <recent name="$PROJECT_DIR$/public/platformConfig/serialize" />
       <recent name="$PROJECT_DIR$/public/assets/css" />
       <recent name="$PROJECT_DIR$/public/assets/image" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -426,12 +464,18 @@
       <workItem from="1534564394856" duration="9056000" />
       <workItem from="1534654216266" duration="2864000" />
       <workItem from="1534663035013" duration="3747000" />
-      <workItem from="1534815714753" duration="19950000" />
+      <workItem from="1534815714753" duration="20225000" />
+      <workItem from="1534901606772" duration="1191000" />
+      <workItem from="1534927731408" duration="4490000" />
+      <workItem from="1535017344431" duration="9323000" />
+      <workItem from="1535093049825" duration="6135000" />
+      <workItem from="1535100747675" duration="5715000" />
+      <workItem from="1535160207342" duration="4596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237853000" />
+    <option name="totallyTimeSpent" value="269578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -446,22 +490,23 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2756953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18669528" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20243205" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35912937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22007255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -511,95 +556,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_select.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_input_number.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/validate/validate_platform.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/validate/validate_link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/uikit/dist/js/uikit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="6027" column="13" lean-forward="false" selection-start-line="6027" selection-start-column="8" selection-end-line="6027" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/validate/validate_number.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/jquery/dist/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="88">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/exhibition_platform_list.tpl" />
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_platform_list.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="105" column="5" lean-forward="true" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/model/common_component_model.js">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/model/common_component_model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_select_platform.tpl">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/tpl/common_select_platform.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
@@ -620,7 +584,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_platform_list.js">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/common_platform_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="19" column="49" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
@@ -634,17 +598,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/css/modal.css">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/css/modal.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -652,11 +609,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_select_platfrom.js">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/common_select_platfrom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
@@ -664,69 +620,31 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/platformConfig/serialize.js" />
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_select.tpl">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/tpl/common_select.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_record_items.tpl">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/tpl/common_record_items.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_input_link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/serialize/serialize_link.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_record_items.js">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/common_record_items.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/serialize/serialize_record_items.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/serialize/serialize_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/constants/default_config.js">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/constants/default_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/validate/validate_all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,11 +653,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/attachments9deb9e3593274e5a8b290e0ec634c960timg.jpeg">
+    <entry file="file://$PROJECT_DIR$/server/attachments9deb9e3593274e5a8b290e0ec634c960timg.jpeg" />
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-179817">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/knockout/build/output/knockout-latest.debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="1155" column="15" lean-forward="false" selection-start-line="1155" selection-start-column="15" selection-end-line="1155" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/knockout/build/output/knockout-latest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/attachments/c652b794faa6ab27538edd1808a48ebbWX20180406-125441@2x.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -749,114 +702,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/controllers.js">
+    <entry file="file://$PROJECT_DIR$/server/attachments/b288aae286925fce1b24ed30bb3bdd1aWX20180821-215240@2x.png" />
+    <entry file="file://$PROJECT_DIR$/node_modules/uikit/dist/css/uikit.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/model/platform_config_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1241">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/api/data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="8" column="67" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179817">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1210">
-          <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <element signature="e#359#402#0" expanded="true" />
-            <element signature="e#675#728#0" expanded="true" />
-            <element signature="e#919#978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/knockout/build/output/knockout-latest.debug.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="1155" column="15" lean-forward="false" selection-start-line="1155" selection-start-column="15" selection-end-line="1155" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/knockout/build/output/knockout-latest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-67157">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/upload/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/common_attachments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="61" column="4" lean-forward="false" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2021">
-          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -864,24 +714,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/upload/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/validate/validate_attachments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/tpl/common_attachments.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="7" lean-forward="false" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/validate/validate_link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/common_input_link.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/validate/validate_platform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/component/common_attachments.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="330">
+          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
           <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/platformConfig/css/platformConfig.css">
+    <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_link.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="96" column="12" lean-forward="false" selection-start-line="96" selection-start-column="12" selection-end-line="96" selection-end-column="12" />
+        <state relative-caret-position="154">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_record_items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/validate/validate_all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_attachments.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/constants/useless_fields.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1663">
+          <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/packages/packages.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/model/platform_config_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/api/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#428#471#0" expanded="true" />
+            <element signature="e#744#797#0" expanded="true" />
+            <element signature="e#1059#1118#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/css/platform_config.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1958">
+          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
           <folding />
         </state>
       </provider>

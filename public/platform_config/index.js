@@ -5,8 +5,9 @@ import { Model } from './model/platform_config_model.js';
 import { ModalModel } from '../module_common/modal/model/model.js'
 import UIkit from 'uikit';
 import '../../node_modules/uikit/dist/css/uikit.min.css'
+import Icons from '../../node_modules/uikit/dist/js/uikit-icons.js'
 import '../assets/css/index.css'
-import './css/platformConfig.css'
+import './css/platform_config.css'
 
 //组件
 import './component/common_attachments.js';
@@ -22,20 +23,24 @@ import { validateAll} from './validate/validate_all';
 import { validateLink } from './validate/validate_link';
 import { validateNumber } from './validate/validate_number';
 import { validatePlatform } from './validate/validate_platform';
+import { validateAttachments } from './validate/validate_attachments';
 
 //序列化
 import { serializeData } from './serialize/serialize_data';
 import { serializeRecordItems } from './serialize/serialize_record_items';
 import { serializeLink } from './serialize/serialize_link';
+import { serializeAttachments } from './serialize/serialize_attachments';
 
 //为启用knockout插件把knockout 赋值给全局，
 window.ko = ko;
+
+UIkit.use(Icons);
 
 function init() {
 	fetchData()
 }
 function fetchData() {
-	axios.get('/api/config.json')
+	axios.get('/api/platformConfig/getConfig')
 		.then((data) => {
 			bindData(data.data)
 		})
@@ -48,9 +53,11 @@ function bindData(data) {
 	viewModel.validateLink = validateLink;
 	viewModel.validateNumber = validateNumber;
 	viewModel.validatePlatform = validatePlatform;
+	viewModel.validateAttachments = validateAttachments;
 	viewModel.showPlatformList = showPlatformList;
 	viewModel.serializeLink = serializeLink;
 	viewModel.serializeRecordItems = serializeRecordItems;
+	viewModel.serializeAttachments = serializeAttachments;
 
 	var el = document.getElementById('root');
 	ko.applyBindings(viewModel, el)
@@ -73,16 +80,22 @@ function submit() {
 
 		return
 	}
-	var data = serializeData(self.serialize_data_list());
-	console.log(data);
 
 	UIkit.modal.confirm('确认提交该平台配置信息？').then(() => {
+		var data = serializeData(self);
+		console.log(data);
 		fetchConfigItems(data)
 	});
 }
 
-function fetchConfigItems() {
-	axios.post('')
+function fetchConfigItems(data) {
+	axios.post('/api/platformConfig/setConfig', data)
+		.then((response) => {
+			console.log(response)
+		})
+		.catch((e) => {
+			console.log(e)
+		})
 }
 
 var modal;

@@ -6,13 +6,13 @@ function validateLink() {
 			if (v.link().replace(/(^\s+)|(\s+$)/g, '').length > 0) {
 				self.validate_tip('')
 			} else {
-				self.validate_tip(self.error_tip)
-				result = false
+				self.validate_tip(self.error_tip);
+				result = false;
 				return false
 			}
 		})
 	} else if (this.required() == true && this.user_input().length == 0) {
-		self.validate_tip(self.error_tip)
+		self.validate_tip(self.error_tip);
 		result = false
 	} else {
 		result = true

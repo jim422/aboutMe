@@ -4,7 +4,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: './public/platformConfig/index.js',
+	entry: {
+		uiKitIcon: './node_modules/uikit/dist/js/uikit-icons.min.js',
+		index: './public/platform_config/index.js'
+	},
 	output: {
 		filename: '[name].bundle.js',
 		path: path.resolve(__dirname, 'dist'),
@@ -28,7 +31,16 @@ module.exports = {
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'output management',
-			template: './index.html'
+			template: './index.html',
+			chunks: ['index']
+			/*files: {
+				js: ["./node_modules/uikit/dist/js/uikit-icons.min.js"],
+				chunks: {
+					"icon": {
+						entry: "./node_modules/uikit/dist/js/uikit-icons.min.js"
+					}
+				}
+			},*/
 		}),
 		new webpack.HotModuleReplacementPlugin()
 	],

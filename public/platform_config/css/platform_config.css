@@ -94,7 +94,7 @@ p {
 .fileList > li div.file-panel {
     display: none;
     position: absolute;
-    top:  87px;
+    top:  86px;
     width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
@@ -104,4 +104,16 @@ p {
 }
 .fileList > li:hover p.title, .fileList > li:hover div.file-panel{
     display: block;
+}
+.attachment_spin {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+#configItems .uk-icon {
+    color: #39f;
+}
+#configItems .queueList .trash svg {
+    width: 17px;
+    height: 17px;
 }

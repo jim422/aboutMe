@@ -3,19 +3,21 @@
 </th>
 <td>
     <div>
-        <div data-bind="visible: readonly == false">
-            <div class="js_upload">
+        <div>
+            <div class="js_upload" data-bind="visible: upload_btn_visible ">
             </div>
             <div class="queueList">
                 <ul class="fileList" data-bind="foreach: attachments_list_for_show">
-                    <li data-bind="attr: { id: id }" style="position: relative">
+                    <li data-bind="attr: { id: id }">
+                        <div class="attachment_spin uk-spinner uk-icon" uk-spinner="ratio: 2" data-bind="visible: $parent.uploading_file_id() === id"></div>
+
                         <p class="title" data-bind="text: name"></p>
                         <p class="imgWrap">
                             <img data-bind="attr: { src: src }">
                         </p>
                         <p class="progress"><span></span></p>
-                        <div class="file-panel">
-                            <div class="cancel">删除</div>
+                        <div class="file-panel trash">
+                            <span class="uk-icon" uk-icon="icon: trash" data-bind="click: $parent.deleteFile.bind($data, $parent, $index())"></span>
                         </div>
                     </li>
                 </ul>

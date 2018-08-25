@@ -13,12 +13,14 @@ ko.components.register('common-attachments', {
 		self.content_tip = params.content_tip;
 		self.validate_tip = params.validate_tip;
 		self.attachments_list_for_show = ko.observableArray([]);
-		/*if (self.validate == undefined) {
-			self.validate = validate
-		}
-		self.validate_list.push(self.validate.bind(this))*/
+		self.uploading_file_id = ko.observable();
 
-		var uploader = setUploaderCfg(self)
+		self.validate_list.push(self.validate.bind(this));
+		self.serialize_data_list.push(self.serialize.bind(this));
+
+		self.uploader = setUploaderCfg(self);
+		self.deleteFile = deleteFile;
+		self.upload_btn_visible = ko.computed(uploadBtnVisible.bind(self))
 	},
 	template: tpl()
 });
@@ -55,13 +57,45 @@ function setUploaderCfg(params) {
 		});
 	};
 
+	uploader.onFileDequeued = function (file) {
+		console.log(file)
+	};
+
+	uploader.onUploadStart = function (file) {
+		//设置需要显示loading的ID
+		params.uploading_file_id(file.id)
+	};
+
+	uploader.onUploadComplete = function (file) {
+		//隐藏loading图标
+		params.uploading_file_id('')
+	};
+
 	uploader.onUploadSuccess = function (file, response) {
 		if (response.code === 1000) {
-			params.attachment.push(response.data.filePath)
+			params.attachments.push(response.data)
 		}
 	};
 
 	return uploader;
 }
 
+function deleteFile(parent, index) {
+	parent.uploader.removeFile(this);
+	//从数据列表中删除
+	parent.attachments.splice(index, 1);
 
+	//从UI列表中删除
+	parent.attachments_list_for_show.splice(index, 1)
+}
+
+function uploadBtnVisible() {
+	var self = this;
+	if (self.readonly === false) {
+		return self.attachments().length >= self.upload_limit
+			? false
+			: true
+	} else {
+		return true
+	}
+}

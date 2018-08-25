@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>aboutMe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
+
 <div id="root" class="container">
     <table class="documentTable" id="configItems">
         <tbody>
@@ -80,20 +81,23 @@
             name: 'common-attachments',
             params: {
                 friendly_name: '执行截图样例',
-                attachment: execution_result_img_examples,
+                attachments: execution_result_img_examples,
                 readonly: false,
                 required: ko.observable(false),
                 token: upload_token,
-                upload_limit: 10,
+                upload_limit: 2,
                 max_file_size: '5',
                 tips: '执行截图样例图片，数量<=10，单图片<=5MB，格式：jpg、png、gif、jpeg',
                 extensions: 'png, jpg, jpeg, gif',
                 head_visible: true,
                 upload_url: upload_url(),
-                image_upload_disable: image_upload_disable,
                 validate_list: validate_list,
                 id: 'execution_result_img_examples',
-                type: 'images'
+                type: 'images',
+                validate: validateAttachments,
+                validate_tip: ko.observable(),
+                serialize_data_list: serialize_data_list,
+                serialize: serializeAttachments
             }
         }, visible: depend_on_execution_result_img_required" id="execution_result_img_examples"></tr>
 
@@ -126,20 +130,23 @@
             name: 'common-attachments',
             params: {
                 friendly_name: '数据截图样例',
-                attachment: data_screenshot_examples,
+                attachments: data_screenshot_examples,
                 readonly: false,
                 required: ko.observable(false),
                 token: upload_token,
-                upload_limit: 10,
+                upload_limit: 2,
                 max_file_size: '5',
                 tips: '数据截图样例图片，数量<=10，单图片<=5MB，格式：jpg、png、gif、jpeg',
                 extensions: 'png, jpg, jpeg, gif',
                 head_visible: true,
                 upload_url: upload_url(),
-                image_upload_disable: image_upload_disable,
                 validate_list: validate_list,
                 id: 'data_screenshot_examples',
-                type: 'images'
+                type: 'images',
+                validate: validateAttachments,
+                validate_tip: ko.observable(),
+                serialize_data_list: serialize_data_list,
+                serialize: serializeAttachments
             }
         }, visible: depend_on_data_screenshot_required" id="data_screenshot_examples"></tr>
 
