@@ -2,51 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/constants/useless_fields.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_attachments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_attachments.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/9deb9e3593274e5a8b290e0ec634c960timg.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/b288aae286925fce1b24ed30bb3bdd1aWX20180821-215240@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/server/attachments/c652b794faa6ab27538edd1808a48ebbWX20180406-125441@2x.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/api/config.json" afterPath="$PROJECT_DIR$/server/controllers/api/platform_config/config.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_attachments.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_attachments.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_input_link.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_input_link.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_input_number.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_input_number.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_platform_list.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_platform_list.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_record_items.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_record_items.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_select.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_select.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/common_select_platfrom.js" afterPath="$PROJECT_DIR$/public/platform_config/component/common_select_platfrom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/model/common_component_model.js" afterPath="$PROJECT_DIR$/public/platform_config/component/model/common_component_model.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_attachments.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_input_link.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_input_link.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_input_number.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_input_number.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_platform_list.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_platform_list.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_record_items.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_record_items.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_select.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_select.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/component/tpl/common_select_platform.tpl" afterPath="$PROJECT_DIR$/public/platform_config/component/tpl/common_select_platform.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/constants/default_config.js" afterPath="$PROJECT_DIR$/public/platform_config/constants/default_config.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/css/modal.css" afterPath="$PROJECT_DIR$/public/platform_config/css/modal.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" afterPath="$PROJECT_DIR$/public/platform_config/css/platform_config.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/index.js" afterPath="$PROJECT_DIR$/public/platform_config/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/model/platform_config_model.js" afterPath="$PROJECT_DIR$/public/platform_config/model/platform_config_model.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_link.js" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_link.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/serialize/serialize_record_items.js" afterPath="$PROJECT_DIR$/public/platform_config/serialize/serialize_record_items.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_all.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_link.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_link.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_number.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_number.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/platformConfig/validate/validate_platform.js" afterPath="$PROJECT_DIR$/public/platform_config/validate/validate_platform.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/controllers/api/data.js" afterPath="$PROJECT_DIR$/server/controllers/api/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/platform_config/本次项目总结..md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/controllers/controllers.js" afterPath="$PROJECT_DIR$/server/controllers/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,8 +17,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/platform_config/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+            <state relative-caret-position="1496">
+              <caret line="90" column="12" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
                 <element signature="e#428#471#0" expanded="true" />
@@ -72,12 +29,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serialize_data.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="serialize_data.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="-112">
+              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="44">
+                <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="28" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="本次项目总结..md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/platform_config/本次项目总结..md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="242">
+                <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -86,17 +69,7 @@
         <entry file="file://$PROJECT_DIR$/public/platform_config/css/platform_config.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1958">
-              <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <caret line="89" column="21" lean-forward="false" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -122,16 +95,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1663">
-              <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/controllers/api/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -146,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+              <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -156,7 +119,7 @@
         <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -167,11 +130,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="markdown" />
         <option value="HTML File" />
         <option value="tpl" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="markdown" />
       </list>
     </option>
   </component>
@@ -230,7 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/module_common/modal/common_modal.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/assets/css.css" />
@@ -281,6 +243,7 @@
         <option value="$PROJECT_DIR$/server/controllers/api/index.js" />
         <option value="$PROJECT_DIR$/public/platform_config/index.js" />
         <option value="$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js" />
+        <option value="$PROJECT_DIR$/public/platform_config/本次项目总结..md" />
       </list>
     </option>
   </component>
@@ -334,7 +297,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -358,7 +321,28 @@
               <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="component" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="constants" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
@@ -367,11 +351,18 @@
               <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="serialize" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="platform_config" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="validate" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,12 +461,13 @@
       <workItem from="1535017344431" duration="9323000" />
       <workItem from="1535093049825" duration="6135000" />
       <workItem from="1535100747675" duration="5715000" />
-      <workItem from="1535160207342" duration="4596000" />
+      <workItem from="1535160207342" duration="4779000" />
+      <workItem from="1535367501532" duration="724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="269578000" />
+    <option name="totallyTimeSpent" value="270485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,17 +483,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20243205" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35912937" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22007255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -509,6 +500,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -556,20 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/platform_config/component/model/common_component_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platform_config/component/tpl/common_select_platform.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="125" lean-forward="false" selection-start-line="5" selection-start-column="125" selection-end-line="5" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/module_common/modal/common_modal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -756,7 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,9 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#26#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -774,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -797,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -813,14 +783,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" column="39" lean-forward="true" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1663">
-          <caret line="157" column="37" lean-forward="true" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
+        <state relative-caret-position="3454">
+          <caret line="157" column="37" lean-forward="false" selection-start-line="157" selection-start-column="37" selection-end-line="157" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -829,14 +798,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -860,7 +828,7 @@
     <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <caret line="16" column="3" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -875,8 +843,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/platform_config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="90" column="12" lean-forward="true" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        <state relative-caret-position="1496">
+          <caret line="90" column="12" lean-forward="false" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
             <element signature="e#428#471#0" expanded="true" />
@@ -889,7 +857,7 @@
     <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/set_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -897,16 +865,38 @@
     <entry file="file://$PROJECT_DIR$/public/platform_config/css/platform_config.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1958">
-          <caret line="89" column="21" lean-forward="true" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
+          <caret line="89" column="21" lean-forward="false" selection-start-line="89" selection-start-column="21" selection-end-line="89" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_data.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="-112">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="44">
+            <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="28" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/platform_config/本次项目总结..md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="242">
+            <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
