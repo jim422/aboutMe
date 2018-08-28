@@ -6,7 +6,7 @@ const webpack = require('webpack');
 module.exports = {
 	entry: {
 		uiKitIcon: './node_modules/uikit/dist/js/uikit-icons.min.js',
-		index: './public/platform_config/index.js'
+		index: './public/index.js'
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -57,12 +57,12 @@ module.exports = {
 			test: /\.tpl$/,
 			use: ['ejs-loader']
 		}, {
-			test: /\.js$/,
+			test: /\.(js|jsx|mjs)$/,
 			exclude: /(node_modules)|(bower_components)/,
 			use: {
 				loader: 'babel-loader',
 				options: {
-					presets: ['@babel/preset-env'],
+					presets: [ "@babel/preset-react", '@babel/preset-env'],
 					plugins: [require('@babel/plugin-transform-object-super'),'@babel/plugin-transform-runtime']
 				}
 			}

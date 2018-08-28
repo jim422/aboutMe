@@ -4,7 +4,7 @@
   "description": "aboutMe",
   "private": true,
   "scripts": {
-    "start_server": "node server/server.js",
+    "start_server": "NODE_ENV=test nodemon server/server.js",
     "start_front": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -24,9 +24,10 @@
     "@babel/core": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
     "@babel/runtime": "^7.0.0-rc.1",
-    "antd": "^3.8.1",
+    "antd": "^3.8.4",
     "axios": "^0.18.0",
     "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-import": "^1.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-runtime": "^6.26.0",
     "express": "^4.16.3",
@@ -35,11 +36,16 @@
     "knockout": "^3.4.2",
     "knockout-mapping": "^2.6.0",
     "node": "^10.7.0",
+    "rc-tween-one": "^2.2.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-router-dom": "^4.3.1",
     "uikit": "^3.0.0-rc.11",
     "webuploader": "^0.1.8"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.0.0-rc.1",
+    "@babel/preset-react": "^7.0.0",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "ejs-loader": "^0.3.1",
@@ -50,5 +56,15 @@
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
+  },
+  "babel": {
+    "plugins": [
+      ["import",
+        {
+          "libraryName": "antd",
+          "style": "css"
+        }
+      ]
+    ]
   }
 }
