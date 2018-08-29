@@ -5,3 +5,19 @@
 ul li {
     list-style: none;
 }
+.header {
+    background-color: #E8F3EC;
+}
+.content {
+    background-color: #fff;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+     -webkit-flex: 1 0 auto;
+    -o-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+    -ms-: 1 0 auto;
+}
+.footer {
+    background-color: #E8F3EC;
+}

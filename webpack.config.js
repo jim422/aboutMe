@@ -42,7 +42,10 @@ module.exports = {
 				}
 			},*/
 		}),
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify('production')
+		})
 	],
 	module: {
 		rules: [{
@@ -63,7 +66,7 @@ module.exports = {
 				loader: 'babel-loader',
 				options: {
 					presets: [ "@babel/preset-react", '@babel/preset-env'],
-					plugins: [require('@babel/plugin-transform-object-super'),'@babel/plugin-transform-runtime']
+					plugins: [require('@babel/plugin-transform-object-super'),'@babel/plugin-transform-runtime', '@babel/plugin-proposal-class-properties']
 				}
 			}
 		}]
