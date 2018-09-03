@@ -1,35 +1,12 @@
-.logo-gather-demo-edit-wrapper {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: #f1f1f1;
-    padding: 0 5%;
-    line-height: 45px;
-}
-
-.logo-gather-demo-edit-wrapper ul {
-    display: block;
-    width: 100%;
-    overflow: hidden;
-}
-
-.logo-gather-demo-edit-wrapper ul li:first-child {
-    margin-left: 0;
-}
-
-.logo-gather-demo-edit-wrapper ul li {
-    float: left;
-    vertical-align: middle;
-    margin: 0 5px;
-}
-
 .logo-gather-demo-wrapper {
     position: relative;
-    background: #019BF0;
+    background: white;
     overflow: hidden;
-    height: 500px;
+    height: 100%;
 }
-
+.contain-class {
+    height: 100%;
+}
 .logo-gather-demo-wrapper .point-wrapper {
     position: absolute;
 }
@@ -43,10 +20,9 @@
     height: 360px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 90px;
     bottom: 0;
-    left: 0;
-    margin: auto;
+    left: 200px;
 }
 
 .logo-gather-demo-wrapper .right-side * {
@@ -66,4 +42,18 @@
         display: none;
     }
 
+}
+.person-info {
+    position: absolute;
+    top: 200px;
+    left: 765px;
+    width: 500px;
+    text-align: center;
+}
+.person-info .title {
+    font: 100 16px "Comic Sans MS";
+    color: black;
+}
+.info-item .anticon {
+    padding-right: 5px;
 }

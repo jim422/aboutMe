@@ -1,11 +1,13 @@
 const path = require('path');
+const fs = require('fs')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
+let ENV_CONFIG = fs.readFileSync('./ENV_CONFIG.json', 'utf-8');
+
 module.exports = {
 	entry: {
-		uiKitIcon: './node_modules/uikit/dist/js/uikit-icons.min.js',
 		index: './public/index.js'
 	},
 	output: {
@@ -33,18 +35,11 @@ module.exports = {
 			title: 'output management',
 			template: './index.html',
 			chunks: ['index']
-			/*files: {
-				js: ["./node_modules/uikit/dist/js/uikit-icons.min.js"],
-				chunks: {
-					"icon": {
-						entry: "./node_modules/uikit/dist/js/uikit-icons.min.js"
-					}
-				}
-			},*/
 		}),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.DefinePlugin({
-			'process.env.NODE_ENV': JSON.stringify('production')
+			'process.env.NODE_ENV': JSON.stringify('production'),
+			'process.my_img_path': ENV_CONFIG
 		})
 	],
 	module: {
