@@ -4,3 +4,9 @@
 .page-one {
     margin-top: -64px;
 }
+.middle {
+    margin: 0 auto;
+}
+.padding-top-20 {
+    padding-top: 20px;
+}

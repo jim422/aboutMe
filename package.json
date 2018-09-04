@@ -36,6 +36,7 @@
     "knockout": "^3.4.2",
     "knockout-mapping": "^2.6.0",
     "node": "^10.7.0",
+    "rc-banner-anim": "^2.0.3",
     "rc-queue-anim": "^1.6.5",
     "rc-scroll-anim": "^2.5.5",
     "rc-tween-one": "^2.2.3",

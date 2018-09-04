@@ -5,6 +5,7 @@ import QueueAnim from 'rc-queue-anim'
 import Carousel from '../components/Carousel'
 import SKILLS from '../constants/SKILLS'
 import SkillDescribe from '../components/SkillDescribe'
+import inVisibleArea from '../util/inVisibleArea'
 
 import '../css/SkillTree.css'
 import '../css/Carousel.css'
@@ -40,18 +41,11 @@ export default class SkillTree extends Component {
 	}
 
 	scroll = () => {
-		if (this.inVisibleArea()) {
+		if (inVisibleArea({ el: this.el })) {
 			this.setState({ show: true })
 		} else {
 			this.setState({ show: false })
 		}
-	};
-
-	inVisibleArea = () => {
-		let elTopInView = window.scrollY + this.clientHeight > this.el.offsetHeight + 100;
-		let elBottomInView = window.scrollY + this.clientHeight < this.el.offsetTop + this.el.offsetHeight;
-
-		return elTopInView && elBottomInView
 	};
 
 	onChange = ({current, rotate, eventType}) => {
