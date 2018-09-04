@@ -2,6 +2,16 @@
     text-align: center;
 }
 .skill-container {
-   /* background-color: #f6f7f8;*/
     height: 100%;
+}
+.skill-title {
+    height: 35px;
+    margin-top: 15px;
+}
+.skill-describe {
+    margin-top: 10px;
+}
+.skill-describe > div {
+    width: 400px;
+    margin: 0 auto;
 }

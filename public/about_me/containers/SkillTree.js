@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import QueueAnim from 'rc-queue-anim'
-import TweenOne from 'rc-tween-one'
 
 import Carousel from '../components/Carousel'
+import SKILLS from '../constants/SKILLS'
+import SkillDescribe from '../components/SkillDescribe'
 
 import '../css/SkillTree.css'
 import '../css/Carousel.css'
@@ -13,31 +14,8 @@ export default class SkillTree extends Component {
 		super(props);
 		this.state = {
 			show: false,
-			/*imgWrapper: [
-				'https://zos.alipayobjects.com/rmsportal/DGOtoWASeguMJgV.png',
-				'https://zos.alipayobjects.com/rmsportal/PDiTkHViQNVHddN.png',
-				'https://zos.alipayobjects.com/rmsportal/QJmGZYJBRLkxFSy.png',
-				'https://zos.alipayobjects.com/rmsportal/pTfNdthdsUpLPLJ.png',
-				'https://zos.alipayobjects.com/rmsportal/TDIbcrKdLWVeWJM.png',
-				'https://zos.alipayobjects.com/rmsportal/dvQuFtUoRmvWLsZ.png',
-			]*/
-			skillWrapper: [{
-				src: 'javascript.png',
-				title: 'javascript',
-				content: 'javascript'
-			}, {
-				src: 'knockoutjs.png',
-				title: 'title',
-				content: 'knockout'
-			}, {
-				src: 'react.jpeg',
-				title: 'react',
-				content: 'react'
-			}, {
-				src: 'webpack.jpeg',
-				title: 'webpack',
-				content: 'webp'
-			}]
+			current: 0,
+			skillWrapper: SKILLS
 		};
 
 	}
@@ -74,10 +52,19 @@ export default class SkillTree extends Component {
 		let elBottomInView = window.scrollY + this.clientHeight < this.el.offsetTop + this.el.offsetHeight;
 
 		return elTopInView && elBottomInView
+	};
+
+	onChange = ({current, rotate, eventType}) => {
+		if (eventType === 'end') {
+			this.setState({ current })
+		}
 	}
 
 	render() {
-		const children = this.state.skillWrapper.map((item, i) => (
+		const { current } = this.state;
+		const currentSkill = SKILLS[current];
+
+ 		const children = this.state.skillWrapper.map((item, i) => (
 			<div
 				key={i.toString()}
 				className={`img-wrapper-${i}`}
@@ -87,14 +74,14 @@ export default class SkillTree extends Component {
 		return(
 			<div className='skill-container'>
 				<QueueAnim
-					className='simple'
-					type={['right', 'left']}
-					delay={600}
-					ease={['easeOutQuart', 'easeInOutQuart']}
+					className='skill-title'
+					type={ ['right', 'left'] }
+					delay={ 300 }
+					ease={ ['easeOutQuart', 'easeInOutQuart'] }
 				>
 					{
 						this.state.show
-							? [<div className='center' key={1}>
+							? [<div className='center' key={ 1 }>
 									<h3>Skill Tree</h3>
 								</div>]
 							: null
@@ -102,10 +89,17 @@ export default class SkillTree extends Component {
 					}
 				</QueueAnim>
 
-				<div className="carousel-demo-wrapper">
-					<Carousel className="carousel-demo" childMaxLength={6}>
-						{children}
+				<div className="carousel-demo-wrapper" style={{ backgroundColor: currentSkill['backgroundColor'] }}>
+					<Carousel className="carousel-demo" childMaxLength={ 6 } onChange={ this.onChange }>
+						{ children }
 					</Carousel>
+				</div>
+
+				<div className='skill-describe'>
+					<SkillDescribe
+						title= { currentSkill['title'] }
+						content= { currentSkill['content'] }
+					/>
 				</div>
 			</div>
 		)

@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/assets/javascript.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/assets/knockoutjs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/assets/react.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/assets/webpack.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ENV_CONFIG.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/components/Carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/components/PersonalInfo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/css/AboutMe.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/css/Carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/css/SkillTree.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/components/SkillDescribe.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/about_me/constants/SKILLS.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/containers/BaseInfo.js" afterPath="$PROJECT_DIR$/public/about_me/containers/BaseInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/containers/Projects.js" afterPath="$PROJECT_DIR$/public/about_me/containers/Projects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js" afterPath="$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/containers/SkillTree.js" afterPath="$PROJECT_DIR$/public/about_me/containers/SkillTree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/containers/WorkExperience.js" afterPath="$PROJECT_DIR$/public/about_me/containers/WorkExperience.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/css/BaseInfo.css" afterPath="$PROJECT_DIR$/public/about_me/css/BaseInfo.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/index.js" afterPath="$PROJECT_DIR$/public/about_me/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/index.css" afterPath="$PROJECT_DIR$/public/assets/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.js" afterPath="$PROJECT_DIR$/public/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/css/Carousel.css" afterPath="$PROJECT_DIR$/public/about_me/css/Carousel.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/about_me/css/SkillTree.css" afterPath="$PROJECT_DIR$/public/about_me/css/SkillTree.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,15 +22,27 @@
       <file leaf-file-name="SkillTree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/about_me/containers/SkillTree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+            <state relative-caret-position="307">
+              <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="38" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
-                <marker date="1535980508177" expanded="true" signature="2231:2687" ph="..." />
-                <marker date="1535980508177" expanded="true" signature="2247:2291" ph="..." />
-                <marker date="1535980508177" expanded="true" signature="2442:2486" ph="..." />
-                <marker date="1535980508177" expanded="true" signature="2571:2677" ph="..." />
-                <marker date="1535980508177" expanded="true" signature="2632:2666" ph="..." />
+                <marker date="1536047467807" expanded="true" signature="1765:2485" ph="..." />
+                <marker date="1536047467807" expanded="true" signature="1781:1831" ph="..." />
+                <marker date="1536047467807" expanded="true" signature="1989:2033" ph="..." />
+                <marker date="1536047467807" expanded="true" signature="2179:2316" ph="..." />
+                <marker date="1536047467807" expanded="true" signature="2269:2305" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillDescribe.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/about_me/components/SkillDescribe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +51,28 @@
       <file leaf-file-name="Carousel.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/about_me/css/Carousel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+            <state relative-caret-position="66">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKILLS.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/about_me/constants/SKILLS.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SkillTree.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/about_me/css/SkillTree.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -65,8 +81,8 @@
       <file leaf-file-name="Carousel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/about_me/components/Carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="196" column="36" lean-forward="false" selection-start-line="196" selection-start-column="36" selection-end-line="196" selection-end-column="36" />
+            <state relative-caret-position="332">
+              <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -87,7 +103,7 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
+            <state relative-caret-position="511">
               <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
               <folding>
                 <marker date="1535861210039" expanded="true" signature="1391:1412" ph="{&quot;@babel/plugin-transform-runtime&quot;: &quot;^7.0.0-rc.1&quot;...}" />
@@ -96,41 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AboutMeLogo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-531">
-              <caret line="118" column="30" lean-forward="false" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
-              <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/about_me/containers/BaseInfo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AboutMe.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/about_me/css/AboutMe.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -144,15 +130,14 @@
         <option value="HTML File" />
         <option value="tpl" />
         <option value="markdown" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="less" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>validate_list</find>
       <find>validate_pool</find>
       <find>serialize_data_list</find>
       <find>serialize</find>
@@ -182,6 +167,7 @@
       <find>require</find>
       <find>image</find>
       <find>imgWrapper</find>
+      <find>onChange</find>
     </findStrings>
     <replaceStrings>
       <replace>this</replace>
@@ -207,8 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/server.js" />
-        <option value="$PROJECT_DIR$/server/controllers/upload/upload.js" />
         <option value="$PROJECT_DIR$/node_modules/webuploader/dist/webuploader.js" />
         <option value="$PROJECT_DIR$/public/platformConfig/css/platformConfig.css" />
         <option value="$PROJECT_DIR$/public/platformConfig/component/tpl/common_attachments.tpl" />
@@ -241,7 +225,6 @@
         <option value="$PROJECT_DIR$/public/about_me/assets/about_me.js" />
         <option value="$PROJECT_DIR$/public/about_me/assets/aboutme.svg" />
         <option value="$PROJECT_DIR$/public/about_me/containers/BaseInfo.js" />
-        <option value="$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js" />
         <option value="$PROJECT_DIR$/public/about_me/containers/Projects.js" />
         <option value="$PROJECT_DIR$/public/about_me/containers/WorkExperience.js" />
         <option value="$PROJECT_DIR$/public/about_me/index.js" />
@@ -249,7 +232,6 @@
         <option value="$PROJECT_DIR$/public/about_me/css/BaseInfo.css" />
         <option value="$PROJECT_DIR$/public/about_me/components/PersonalInfo.js" />
         <option value="$PROJECT_DIR$/public/assets/css/index.css" />
-        <option value="$PROJECT_DIR$/public/about_me/css/SkillTree.css" />
         <option value="$PROJECT_DIR$/public/about_me/containers/Carousel.js" />
         <option value="$PROJECT_DIR$/ENV_CONFIG" />
         <option value="$PROJECT_DIR$/ENV_CONFIG.json" />
@@ -257,6 +239,10 @@
         <option value="$PROJECT_DIR$/public/about_me/components/Carousel.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/public/about_me/containers/SkillTree.js" />
+        <option value="$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js" />
+        <option value="$PROJECT_DIR$/public/about_me/constants/SKILLS.js" />
+        <option value="$PROJECT_DIR$/public/about_me/components/SkillDescribe.js" />
+        <option value="$PROJECT_DIR$/public/about_me/css/SkillTree.css" />
         <option value="$PROJECT_DIR$/public/about_me/css/Carousel.css" />
       </list>
     </option>
@@ -273,9 +259,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -311,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -335,21 +319,7 @@
               <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="about_me" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="about_me" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="containers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aboutMe" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="about_me" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
@@ -360,7 +330,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -467,7 +436,8 @@
       <workItem from="1535511080335" duration="21800000" />
       <workItem from="1535595974473" duration="15328000" />
       <workItem from="1535852480320" duration="12066000" />
-      <workItem from="1535963535081" duration="11022000" />
+      <workItem from="1535963535081" duration="12073000" />
+      <workItem from="1536026467610" duration="11058000" />
     </task>
     <task id="LOCAL-00001" summary="添加目录结构，">
       <created>1535373432267</created>
@@ -480,7 +450,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="355162000" />
+    <option name="totallyTimeSpent" value="367271000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,17 +466,16 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21959943" sideWeight="0.79571986" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22246066" sideWeight="0.79571986" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28778717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22007255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24425635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21387696" sideWeight="0.20428015" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22007255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -514,6 +483,7 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -565,20 +535,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/platform_config/serialize/serialize_attachments.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/platform_config/constants/useless_fields.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/packages/packages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -768,6 +724,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -793,7 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -808,16 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
           <caret line="23" column="96" lean-forward="false" selection-start-line="23" selection-start-column="96" selection-end-line="23" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/about_me/css/SkillTree.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -841,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -854,23 +799,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/about_me/css/ImageWrapper..less" />
+    <entry file="file://$PROJECT_DIR$/public/about_me/containers/BaseInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/about_me/css/ImageWrapper..less">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="245">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="118" column="30" lean-forward="false" selection-start-line="118" selection-start-column="25" selection-end-line="118" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="511">
+          <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
+          <folding>
+            <marker date="1535861210039" expanded="true" signature="1391:1412" ph="{&quot;@babel/plugin-transform-runtime&quot;: &quot;^7.0.0-rc.1&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -882,61 +837,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/about_me/components/AboutMeLogo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="105" column="32" lean-forward="true" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/about_me/components/Carousel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="196" column="36" lean-forward="false" selection-start-line="196" selection-start-column="36" selection-end-line="196" selection-end-column="36" />
+        <state relative-caret-position="332">
+          <caret line="90" column="18" lean-forward="false" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="69" column="4" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="4" />
-          <folding>
-            <marker date="1535861210039" expanded="true" signature="1391:1412" ph="{&quot;@babel/plugin-transform-runtime&quot;: &quot;^7.0.0-rc.1&quot;...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/about_me/containers/BaseInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/about_me/containers/SkillTree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="36" column="25" lean-forward="false" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        <state relative-caret-position="307">
+          <caret line="97" column="38" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="38" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
-            <marker date="1535980508177" expanded="true" signature="2231:2687" ph="..." />
-            <marker date="1535980508177" expanded="true" signature="2247:2291" ph="..." />
-            <marker date="1535980508177" expanded="true" signature="2442:2486" ph="..." />
-            <marker date="1535980508177" expanded="true" signature="2571:2677" ph="..." />
-            <marker date="1535980508177" expanded="true" signature="2632:2666" ph="..." />
+            <marker date="1536047467807" expanded="true" signature="1765:2485" ph="..." />
+            <marker date="1536047467807" expanded="true" signature="1781:1831" ph="..." />
+            <marker date="1536047467807" expanded="true" signature="1989:2033" ph="..." />
+            <marker date="1536047467807" expanded="true" signature="2179:2316" ph="..." />
+            <marker date="1536047467807" expanded="true" signature="2269:2305" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/about_me/components/SkillDescribe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/about_me/constants/SKILLS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/about_me/css/SkillTree.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/about_me/css/Carousel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        <state relative-caret-position="66">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>

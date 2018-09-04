@@ -1,8 +1,7 @@
 .carousel-demo-wrapper {
     position: relative;
-    background: #f6f7f8;
     overflow: hidden;
-    height: 500px;
+    height: 55%;
 }
 
 .carousel-demo {
@@ -57,28 +56,31 @@
 .img-wrapper-0 {
     height: 300px;
     background-image: url('../assets/javascript.png');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 .img-wrapper-1 {
     height: 300px;
     background-image: url('../assets/knockoutjs.png');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 .img-wrapper-2 {
     height: 300px;
     background-image: url('../assets/react.jpeg');
-    background-size: cover;
-    background-position: top center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 .img-wrapper-3 {
     height: 300px;
     background-image: url('../assets/webpack.jpeg');
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 .img-wrapper img {
     height: 100%;
-    draggable: false
 }

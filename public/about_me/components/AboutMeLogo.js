@@ -103,7 +103,6 @@ class AboutMeLogo extends Component {
 		const ctx = canvas.getContext('2d');
 
 		ctx.clearRect(0, 0, w, h);
-		console.log(w, h)
 		canvas.width = this.props.w;
 		canvas.height = h;
 
