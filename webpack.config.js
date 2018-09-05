@@ -1,5 +1,5 @@
 const path = require('path');
-const fs = require('fs')
+const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
@@ -33,6 +33,7 @@ module.exports = {
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'output management',
+			favicon: 'favicon.ico',
 			template: './index.html',
 			chunks: ['index']
 		}),

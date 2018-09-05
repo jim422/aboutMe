@@ -49,7 +49,7 @@ export default class WorkExperience extends Component {
 			<div className='middle work-experience'>
 
 				<QueueAnim
-					className='skill-title'
+					className='work-title'
 					type={ ['right', 'left'] }
 					delay={ 300 }
 					ease={ ['easeOutQuart', 'easeInOutQuart'] }
@@ -63,7 +63,6 @@ export default class WorkExperience extends Component {
 
 					}
 				</QueueAnim>
-				<h1 className='padding-top-20'>www</h1>
 
 				<Steps direction="vertical" current={1} className='padding-top-20'>
 					<Step title="2016/08" description=" 开始前端工程师的职业生涯" />

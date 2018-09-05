@@ -101,3 +101,7 @@
         transform: scale(.46) translateX(12px);
     }
 }
+.project-title {
+    height: 35px;
+    margin: 15px auto;
+}

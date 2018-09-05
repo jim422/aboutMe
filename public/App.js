@@ -16,11 +16,11 @@ class App extends Component {
 				</Header>
 
 				<Content className='content'>
+
 					<AboutMe/>
 				</Content>
 
 				<Footer className='footer'>
-					<div> 33</div>
 				</Footer>
 			</Layout>
 		)

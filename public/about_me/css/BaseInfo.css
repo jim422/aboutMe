@@ -20,9 +20,9 @@
     height: 360px;
     position: absolute;
     right: 0;
-    top: 90px;
+    top: 200px;
     bottom: 0;
-    left: 200px;
+    left: 300px;
 }
 
 .logo-gather-demo-wrapper .right-side * {
@@ -45,7 +45,7 @@
 }
 .person-info {
     position: absolute;
-    top: 200px;
+    top: 400px;
     left: 765px;
     width: 500px;
     text-align: center;

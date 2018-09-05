@@ -18,6 +18,9 @@ class PersonalInfo extends PureComponent {
 					</span>
 					<ul className="info-item">
 						<li>
+							<Icon type="user" /> 金峰杰
+						</li>
+						<li>
 							<Icon type="mail" />jinfengjie_12@126.com
 						</li>
 						<li>
