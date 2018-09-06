@@ -29,3 +29,6 @@ ul li {
     background: -moz-linear-gradient(white, #f5fefe); /* Firefox 3.6 - 15 */
     background: linear-gradient(white, #f5fefe); /* 标准的语法 */
 }
+.navbar ul{
+    background-color: rgba(0, 0, 0, 0);
+}

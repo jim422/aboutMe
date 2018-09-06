@@ -40,7 +40,7 @@ function init() {
 	fetchData()
 }
 function fetchData() {
-	axios.get('/api/platformConfig/getConfig')
+	axios.get('/api/platform/getConfig')
 		.then((data) => {
 			bindData(data.data)
 		})

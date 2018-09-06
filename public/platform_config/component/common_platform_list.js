@@ -8,7 +8,7 @@ ko.components.register('common-platform-list', {
 		this.platform_name = params.data.platform_name;
 		this.select_platform = selectPlatform;
 		this.icon = function (weiboType) {
-			return require('../../assets/image/icon_' + weiboType + '.png');
+			return 'http://localhost:9090/public/assets/image/icon_' + weiboType + '.png'
 		}
 	},
 	template: tpl()

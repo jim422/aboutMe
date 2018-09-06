@@ -11,7 +11,6 @@ class PlatformConfig extends Component {
 	}
 
 	render() {
-		console.log(this.props)
 		return(
 			<table className="documentTable" id="configItems">
 				<tbody>

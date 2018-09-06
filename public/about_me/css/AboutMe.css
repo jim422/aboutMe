@@ -1,7 +1,7 @@
 .home-page-wrapper {
     height: 100vh;
 }
-.page-one {
+.page-first {
     margin-top: -64px;
 }
 .middle {
@@ -9,4 +9,7 @@
 }
 .padding-top-20 {
     padding-top: 20px;
+}
+.page-last {
+    margin-bottom: 48px;
 }

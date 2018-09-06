@@ -13,7 +13,6 @@ import './css/AboutMe.css'
 
 class AboutMe extends Component {
 	render() {
-		console.log(this.props)
 		return (
 			<div >
 				<div>
@@ -23,7 +22,7 @@ class AboutMe extends Component {
 					<ScrollLink to="page3" showHeightActive="70%" toHash={false} />
 				</div>
 
-				<div className='home-page-wrapper page-one'>
+				<div className='home-page-wrapper page-first'>
 					<BaseInfo />
 				</div>
 
@@ -35,7 +34,7 @@ class AboutMe extends Component {
 					<Projects />
 				</div>
 
-				<div className='home-page-wrapper'>
+				<div className='home-page-wrapper page-last'>
 					<WorkExperience />
 				</div>
 
