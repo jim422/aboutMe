@@ -11,11 +11,3 @@ app.use(controller.router);
 server.listen('9090', function () {
 	console.log('9090')
 });
-
-
-/*
-app.post('/upload/upload', function (req, res) {
-	res.end('test')
-	console.log(req)
-})
-*/

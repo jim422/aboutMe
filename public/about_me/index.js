@@ -13,6 +13,7 @@ import './css/AboutMe.css'
 
 class AboutMe extends Component {
 	render() {
+		console.log(this.props)
 		return (
 			<div >
 				<div>

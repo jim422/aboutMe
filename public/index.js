@@ -1,9 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button } from 'antd'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.js'
+
 console.log(process.env.NODE_ENV, process.my_img_path)
 ReactDOM.render(
-	<App/>,
+	(<BrowserRouter>
+		<App/>
+	</BrowserRouter>),
 	document.getElementById('root')
 );

@@ -13,9 +13,8 @@ router.use('/node_modules', packages.router);
 router.use('/api', api.router);
 router.use('/upload', upload.router);
 
-router.get('/', function (req, res) {
+/*router.get('/', function (req, res) {
 	fs.readFile('index.html', function (err, data) {
-
 		if (err) {
 			res.write(JSON.stringify(err))
 		} else {
@@ -24,7 +23,8 @@ router.get('/', function (req, res) {
 
 		res.end()
 	})
-})
+})*/
+
 
 module.exports = {
 	router: router

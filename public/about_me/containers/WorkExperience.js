@@ -56,7 +56,7 @@ export default class WorkExperience extends Component {
 				>
 					{
 						this.state.visible
-							? [<div className='center' key={ 1 }>
+							? [<div className='center' key={ 3 }>
 								<h3>工作经验</h3>
 							</div>]
 							: null

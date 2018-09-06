@@ -59,7 +59,7 @@ function bindData(data) {
 	viewModel.serializeRecordItems = serializeRecordItems;
 	viewModel.serializeAttachments = serializeAttachments;
 
-	var el = document.getElementById('root');
+	var el = document.getElementById('configItems');
 	ko.applyBindings(viewModel, el)
 }
 
@@ -129,4 +129,8 @@ function confirmCallback(selected) {
 	this.platform_name(selected.platform_name());
 }
 
-init();
+//init();
+
+export {
+	init
+}

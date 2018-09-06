@@ -27,6 +27,9 @@ module.exports = {
 				"target": "http://localhost:9090",
 				"changeOrigin": true
 			}
+		},
+		historyApiFallback:{
+			disableDotRule: true
 		}
 	},
 	plugins: [
