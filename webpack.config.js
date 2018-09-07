@@ -3,6 +3,9 @@ const fs = require('fs');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
+const PurifyCssWebpack = require('purifycss-webpack');
+const glob = require('glob');
 
 const webpack = require('webpack');
 
@@ -39,6 +42,10 @@ module.exports = {
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new CleanWebpackPlugin(['dist']),
+		new ExtractTextWebpackPlugin({
+			filename: 'css/index.css',
+			disable: true //由于是link标签引入，不支持热更新开发模式下禁用，生产模式下开启
+		}),
 		new HtmlWebpackPlugin({
 			title: 'output management',
 			favicon: 'favicon.ico',
@@ -47,6 +54,9 @@ module.exports = {
 			minify: {
 				collapseWhitespace: true
 			}
+		}),
+		new PurifyCssWebpack({
+			paths: glob.sync(path.resolve('src/*.html'))
 		}),
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('production'),
@@ -75,7 +85,26 @@ module.exports = {
 	module: {
 		rules: [{
 			test: /\.css$/,
-			use: ['style-loader', 'css-loader']
+			use: ExtractTextWebpackPlugin.extract({
+				fallback: 'style-loader', //开发时还是传入到style标签内
+				use: [{
+					loader: 'css-loader'
+				}, {
+					loader: 'postcss-loader'
+				}]
+			})
+		}, {
+			test: /\.less$/,
+			use: ExtractTextWebpackPlugin.extract({
+				fallback: 'style-loader',
+				use: [{
+					loader: 'css-loader',
+				}, {
+					loader: 'less-loader',
+				}, {
+					loader: 'postcss-loader'
+				}]
+			})
 		}, {
 			test: /\.(image|png|svg|jpg|jpeg|gif)$/,
 			use: {

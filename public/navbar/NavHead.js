@@ -42,6 +42,18 @@ export default class NavHead extends Component {
 							>平台配置</MenuItem>
 						</MenuItemGroup>
 					</SubMenu>
+
+					<SubMenu
+						title='react'
+					>
+						<MenuItemGroup>
+							<MenuItem
+								key='/react/appeal'
+							>
+								react + antd MVVM
+							</MenuItem>
+						</MenuItemGroup>
+					</SubMenu>
 				</Menu>
 			</div>
 

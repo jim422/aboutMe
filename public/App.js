@@ -7,6 +7,7 @@ import './assets/css/index.css'
 import NavHead from './navbar/NavHead'
 import AboutMe from './about_me/index.js'
 import PlatformConfig from './platform_config/PlatformConfig'
+import Appeal from './appeal/index'
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,16 +35,15 @@ class App extends Component {
 						/>
 
 						<Route
-							path='/platformConfig'
+							path='/knockout/platformConfig'
 							component={PlatformConfig}
 						/>
 
 						<Route
-							path='/a'
-							component={ab}
-						>
-							<Route path='/fff' component={ab}/>
-						</Route>
+							path='/react/appeal'
+							component={Appeal}
+						/>
+
 
 						<Redirect
 							to='/aboutMe'
@@ -60,9 +60,3 @@ class App extends Component {
 }
 
 export default App
-
-function ab() {
-	return (
-		<div>ab</div>
-	)
-}
