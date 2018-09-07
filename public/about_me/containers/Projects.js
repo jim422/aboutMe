@@ -45,7 +45,7 @@ export default class Projects extends Component {
 
 	render() {
 		return(
-			<div>
+			<div className='project-container'>
 				<QueueAnim
 					className='project-title'
 					type={ ['right', 'left'] }

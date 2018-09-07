@@ -13,8 +13,8 @@ module.exports = {
 		index: './public/index.js'
 	},
 	output: {
-		filename: '[name].bundle.js',
-		path: path.join(__dirname, '/dist'),
+		filename: '[name].bundle.[hash:8]js',
+		path: path.resolve(__dirname, '/dist'),
 		publicPath: '/',
 	},
 	devtool: 'inline-source-map',
@@ -37,14 +37,17 @@ module.exports = {
 		overlay: false
 	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
 		new CleanWebpackPlugin(['dist']),
 		new HtmlWebpackPlugin({
 			title: 'output management',
 			favicon: 'favicon.ico',
 			template: './index.html',
-			chunks: ['index']
+			chunks: ['index'],
+			minify: {
+				collapseWhitespace: true
+			}
 		}),
-		new webpack.HotModuleReplacementPlugin(),
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify('production'),
 			'process.my_img_path': ENV_CONFIG
@@ -64,10 +67,7 @@ module.exports = {
 			},
 			minify: true,
 			navigateFallback: path.resolve(__dirname, '/index.html'),
-			// Ignores URLs starting from /__ (useful for Firebase):
-			// https://github.com/facebookincubator/create-react-app/issues/2237#issuecomment-302693219
 			navigateFallbackWhitelist: [/^(?!\/__).*/],
-			// Don't precache sourcemaps (they're large) and build asset manifest:
 			staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
 		}),
 
@@ -95,5 +95,9 @@ module.exports = {
 				}
 			}
 		}]
+	},
+	mode: 'development',
+	resolve: {
+
 	}
 };

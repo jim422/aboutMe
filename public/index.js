@@ -10,3 +10,7 @@ ReactDOM.render(
 	</BrowserRouter>),
 	document.getElementById('root')
 );
+
+if (module.hot) {
+	module.hot.accept()
+}
