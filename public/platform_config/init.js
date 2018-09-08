@@ -6,7 +6,7 @@ import { ModalModel } from '../module_common/modal/model/model.js'
 import UIkit from 'uikit';
 import '../../node_modules/uikit/dist/css/uikit.min.css'
 import Icons from '../../node_modules/uikit/dist/js/uikit-icons.js'
-import '../assets/css/index.css'
+import '../css/index.css'
 import './css/platform_config.css'
 
 //组件

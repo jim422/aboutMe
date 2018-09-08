@@ -1,0 +1,64 @@
+{
+  "platform_list": [
+    {
+      "platform_name": "微信",
+      "platform_id": 9,
+      "execution_link": "",
+      "execution_img_limit": 3,
+      "execution_img": [],
+      "data_screenshot_img": [],
+      "data_screenshot_limit": 3,
+      "record_item": [{
+        "id": 1,
+        "type": "int",
+        "value": "",
+        "name": "阅读数"
+      }, {
+        "id": 2,
+        "type": "int",
+        "value": "",
+        "name": "送达人数"
+      }, {
+        "id": 3,
+        "type": "int",
+        "value": "",
+        "name": "分享人数"
+      }, {
+        "id": 4,
+        "type": "double",
+        "value": "",
+        "name": "好友转发比例"
+      }]
+    },
+    {
+      "platform_name": "新浪",
+      "platform_id": 1,
+      "execution_link": "",
+      "execution_img_limit": 3,
+      "execution_img": [],
+      "data_screenshot_img": [],
+      "data_screenshot_limit": 3,
+      "record_item": [{
+        "id": 1,
+        "type": "int",
+        "value": "",
+        "name": "阅读数"
+      }, {
+        "id": 2,
+        "type": "int",
+        "value": "",
+        "name": "送达人数"
+      }, {
+        "id": 5,
+        "type": "double",
+        "value": "",
+        "name": "历史消息比例"
+      }, {
+        "id": 6,
+        "type": "double",
+        "value": "",
+        "name": "朋友圈比例"
+      }]
+    }
+  ]
+}

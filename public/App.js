@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { Route, Switch, Redirect } from 'react-router-dom'
-import './assets/css/index.css'
+import './css/index.css'
 
 //组件
 import NavHead from './navbar/NavHead'

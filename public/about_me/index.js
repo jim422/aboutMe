@@ -9,8 +9,6 @@ import WorkExperience from './containers/WorkExperience'
 
 import './css/AboutMe.css'
 
-
-
 class AboutMe extends Component {
 	render() {
 		return (

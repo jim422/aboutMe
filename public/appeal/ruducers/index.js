@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import appealReducer from '../appeal/ruducers/index'
 
+import { appealForm } from '../actions/appealForm';
 
 export default combineReducers({
-	appealReducer
+	appealForm
 })
