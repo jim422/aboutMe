@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from './actions/index'
-console.log(actions);
+import AppealForm from './container/AppealForm'
+
+import './css/appeal.css'
+
 class Appeal extends Component {
 	constructor(props) {
 		super(props)
 	}
 	componentWillMount() {
-		console.log(this.props)
 		this.props.fetchAppealForm(2222)
 	}
 	render() {
 		return(
 			<div>
-				dddd
+				<AppealForm
+					appealForm={this.props.appealForm}
+				/>
 			</div>
 		)
 	}
@@ -21,7 +25,7 @@ class Appeal extends Component {
 
 const mapStateToProps = (state) => {
 	return {
-		test: state.test
+		appealForm: state.appealReducer.appealForm
 	}
 };
 

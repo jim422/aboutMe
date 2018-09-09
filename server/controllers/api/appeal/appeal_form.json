@@ -4,60 +4,70 @@
       "platform_name": "微信",
       "platform_id": 9,
       "execution_link": "",
+      "link_rules": ["https://", "https://mp.weixin.qq.com/"],
       "execution_img_limit": 3,
       "execution_img": [],
       "data_screenshot_img": [],
       "data_screenshot_limit": 3,
-      "record_item": [{
+      "record_items": [{
         "id": 1,
         "type": "int",
         "value": "",
-        "name": "阅读数"
+        "name": "阅读数",
+        "required": true
       }, {
         "id": 2,
         "type": "int",
         "value": "",
-        "name": "送达人数"
+        "name": "送达人数",
+        "required": false
       }, {
         "id": 3,
         "type": "int",
         "value": "",
-        "name": "分享人数"
+        "name": "分享人数",
+        "required": false
       }, {
         "id": 4,
         "type": "double",
         "value": "",
-        "name": "好友转发比例"
+        "name": "好友转发比例",
+        "required": true
       }]
     },
     {
       "platform_name": "新浪",
       "platform_id": 1,
       "execution_link": "",
+      "link_rules": ["https://", "https://weibo.com/"],
       "execution_img_limit": 3,
       "execution_img": [],
       "data_screenshot_img": [],
       "data_screenshot_limit": 3,
-      "record_item": [{
+      "record_items": [{
         "id": 1,
         "type": "int",
         "value": "",
-        "name": "阅读数"
+        "name": "阅读数",
+        "required": false
       }, {
         "id": 2,
         "type": "int",
         "value": "",
-        "name": "送达人数"
+        "name": "送达人数",
+        "required": true
       }, {
         "id": 5,
         "type": "double",
         "value": "",
-        "name": "历史消息比例"
+        "name": "历史消息比例",
+        "required": true
       }, {
         "id": 6,
         "type": "double",
         "value": "",
-        "name": "朋友圈比例"
+        "name": "朋友圈比例",
+        "required": false
       }]
     }
   ]
