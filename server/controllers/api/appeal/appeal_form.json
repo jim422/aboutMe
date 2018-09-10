@@ -40,7 +40,7 @@
       "platform_id": 1,
       "execution_link": "",
       "link_rules": ["https://", "https://weibo.com/"],
-      "execution_img_limit": 3,
+      "execution_img_limit": 1,
       "execution_img": [],
       "data_screenshot_img": [],
       "data_screenshot_limit": 3,

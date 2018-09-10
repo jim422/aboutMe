@@ -5,8 +5,19 @@ import { Form } from 'antd'
 
 import InputLink from '../components/InputLink'
 import RecordList from '../components/RecordList.js'
+import ScreenshotUpload from '../components/ScreenshotUpload'
+
+import { validateBeforeUpload } from '../validate/validateBeforUpload';
 
 import { Table } from 'antd'
+
+let commonCfg = {
+	action: '/upload/upload',
+	beforeUpload: validateBeforeUpload,
+	listType: "picture-card",
+	accept: 'image/jpeg, image/jpg, image/png',
+	maxSize: '5'
+}
 
 function deliverFormProps(form) {
 	const columns = [{
@@ -27,13 +38,37 @@ function deliverFormProps(form) {
 	}, {
 		title: '执行截图',
 		dataIndex: 'execution_img',
-		render: (text, record) => {
+		render: (text, record, index) => {
+			let uploadProps = {
+				...commonCfg,
+				limit: record.execution_img_limit
+			};
 
+			return <ScreenshotUpload
+				form={ form }
+				field={ `data[${index}]['execution_img']` }
+				uploadProps={ uploadProps }
+				required={ true }
+				message='请上传执行截图'
+				getValueFromEvent={ getValueFromEvent }
+			/>
 		}
 	}, {
 		title: '数据截图',
 		dataIndex: 'data_screenshot_img',
-		render: (text, record) => {
+		render: (text, record, index) => {
+			let uploadProps = {
+				...commonCfg,
+				limit: record.data_screenshot_limit
+			};
+			return <ScreenshotUpload
+				form={ form }
+				field={ `data[${index}]['data_screenshot_img']` }
+				uploadProps={ uploadProps }
+				required={ true }
+				message='请上传执行截图'
+				getValueFromEvent={ getValueFromEvent }
+			/>
 
 		}
 	}, {
@@ -91,3 +126,7 @@ export default connect(
 	mapStateToProps,
 	mapDispatchToProps
 )(Form.create()(AppealForm))
+
+function getValueFromEvent({file, fileList}, status) {
+	return { value: fileList.filter(item => item.status === 'done'), status}
+}
