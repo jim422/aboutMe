@@ -13,7 +13,7 @@ let ENV_CONFIG = fs.readFileSync('./ENV_CONFIG.json', 'utf-8');
 
 module.exports = {
 	entry: {
-		index: './public/index.js'
+		index: './src/index.js'
 	},
 	output: {
 		filename: '[name].bundle.js',

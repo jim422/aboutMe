@@ -17,7 +17,7 @@ class App extends Component {
 			<Layout style={{ minHeight: '100vh' }}>
 				<Header className='header'>
 					<Route
-						component={NavHead}
+						component={ NavHead }
 					/>
 				</Header>
 
@@ -26,22 +26,22 @@ class App extends Component {
 						<Route
 							exact
 							path='/'
-							render={() => (<Redirect to="/aboutMe"/>)}
+							render={ () => (<Redirect to="/aboutMe"/>) }
 						/>
 						<Route
 							exact
 							path='/aboutMe'
-							component={AboutMe}
+							component={ AboutMe }
 						/>
 
 						<Route
 							path='/knockout/platformConfig'
-							component={PlatformConfig}
+							component={ PlatformConfig }
 						/>
 
 						<Route
 							path='/react/appeal'
-							component={Appeal}
+							component={ Appeal }
 						/>
 
 

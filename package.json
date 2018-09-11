@@ -4,11 +4,10 @@
   "description": "aboutMe",
   "private": true,
   "scripts": {
-    "start_server": "NODE_ENV=test nodemon server/server.js",
-    "start_front": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "dev": "webpack-dev-server ./config/webpack.develope.js --open"
   },
   "repository": {
     "type": "git",
