@@ -15,7 +15,7 @@ function validateRecordItem(item) {
 					: cb('请输入正整数')
 			}
 
-		} else if (item.type === 'int') {
+		} else if (item.type === 'int' && value !== undefined) {
 
 			reg.test(value)
 				? cb()
