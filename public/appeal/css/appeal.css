@@ -1,3 +1,14 @@
 .record-item > .ant-form-item{
     display: flex;
 }
+.appeal-form-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+.appeal-form-container .ant-upload .ant-btn {
+    width: 75px;
+}
+.appeal-form-container .ant-upload, .appeal-form-container .ant-upload-list-item {
+    width: 93px;
+    height: 93px;
+}

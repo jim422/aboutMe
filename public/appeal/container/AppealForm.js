@@ -23,21 +23,25 @@ function deliverFormProps(form) {
 	const columns = [{
 		title: '平台',
 		dataIndex: 'platform_name',
+		width: '80px',
 		render: text => text
 	}, {
 		title: '执行链接',
 		dataIndex: 'execution_link',
+		width: '200px',
 		render: (text, record, index) => {
 			return <InputLink
 				form={ form }
 				field='execution_link'
 				pattern={ record.link_rules }
 				index={ index }
+				className={'execution_link'}
 			/>
 		}
 	}, {
 		title: '执行截图',
 		dataIndex: 'execution_img',
+		width: '364px',
 		render: (text, record, index) => {
 			let uploadProps = {
 				...commonCfg,
@@ -56,6 +60,7 @@ function deliverFormProps(form) {
 	}, {
 		title: '数据截图',
 		dataIndex: 'data_screenshot_img',
+		width: '364px',
 		render: (text, record, index) => {
 			let uploadProps = {
 				...commonCfg,
@@ -100,7 +105,7 @@ class AppealForm extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className={'appeal-form-container'}>
 				<Table
 					dataSource={ this.props.appealForm.platform_list }
 					columns={ deliverFormProps(this.props.form) }

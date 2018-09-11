@@ -117,3 +117,7 @@ p {
     width: 17px;
     height: 17px;
 }
+#configItems .queueList ul {
+    margin: 0;
+    padding: 0;
+}

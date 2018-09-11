@@ -9,9 +9,6 @@ const MenuItemGroup = Menu.ItemGroup;
 export default class NavHead extends Component {
 	constructor(props) {
 		super(props)
-		this.state = {
-			current: '/aboutMe'
-		}
 	}
 
 	handleClick = (e) => {
@@ -25,7 +22,7 @@ export default class NavHead extends Component {
 		return (
 			<div className='navbar'>
 				<Menu
-					selectedKeys={ [this.state.current] }
+					selectedKeys={ [this.props.location.pathname] }
 					mode='horizontal'
 					onClick={ this.handleClick }
 				>
@@ -50,7 +47,7 @@ export default class NavHead extends Component {
 							<MenuItem
 								key='/react/appeal'
 							>
-								react + antd MVVM
+								react + antd
 							</MenuItem>
 						</MenuItemGroup>
 					</SubMenu>

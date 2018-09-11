@@ -5,7 +5,7 @@ import { validateLink } from '../validate/validateLink';
 const FormItem = Form.Item;
 
 export default function InputLink(props) {
-	const { form: { getFieldDecorator }, field, index, pattern } = props;
+	const { form: { getFieldDecorator }, field, index, pattern, className } = props;
 	return (
 		<FormItem>
 			{
@@ -17,7 +17,7 @@ export default function InputLink(props) {
 						}
 					]
 				})(
-					<Input/>
+					<Input className={className}/>
 				)
 			}
 		</FormItem>
