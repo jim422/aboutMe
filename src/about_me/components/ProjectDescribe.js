@@ -3,6 +3,7 @@ import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
 import { Icon } from 'antd';
+import { Link } from 'react-router-dom'
 import '../css/ProjectDescribe.css';
 
 const Element = BannerAnim.Element;
@@ -20,25 +21,30 @@ const textData = {
 
 let dataArray = [
 	{
-		pic: 'https://zos.alipayobjects.com/rmsportal/ogXcvssYXpECqKG.png',
-		map: 'https://zos.alipayobjects.com/rmsportal/HfBaRfhTkeXFwHJ.png',
+		pic: require('../assets/appeal.jpg'),
+		title: '账号申诉',
+		content: '根据平台的配置项展示用户需要输入的内容, 运用到的技术有 react + redux + antd',
+		detail: '/react/appeal',
 		color: '#FFF43D',
 		background: '#F6B429',
 	},
 	{
-		pic: 'https://zos.alipayobjects.com/rmsportal/iCVhrDRFOAJnJgy.png',
-		map: 'https://zos.alipayobjects.com/rmsportal/XRfQxYENhzbfZXt.png',
+		pic: require('../assets/platformConfig.jpg'),
+		title: '平台配置',
+		content: '为了灵活的配置各平台的执行结果和数据截图，减少开发工作，提高效率，新增执行结果和数据截图配置功能。',
+		detail: '/knockout/platformConfig',
 		color: '#FF4058',
 		background: '#FC1E4F',
 	},
-	{
+	/*{
 		pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-		map: 'https://zos.alipayobjects.com/rmsportal/syuaaBOvttVcNks.png',
+		title: '账号申诉',
+		content: '根据平台的配置项展示用户需要输入的内容, 运用到的技术有 react + redux + antd，<Link to="/react/appeal">详细</Link>',
 		color: '#9FDA7F',
 		background: '#64D487',
-	},
+	},*/
 ];
-dataArray = dataArray.map(item => ({ ...item, ...textData }));
+//dataArray = dataArray.map(item => ({ ...item, ...textData }));
 
 export default class DetailSwitchDemo extends React.Component {
 	static defaultProps = {
@@ -112,9 +118,9 @@ export default class DetailSwitchDemo extends React.Component {
 					ease={['easeOutCubic', 'easeInQuad']}
 					key="img-wrapper"
 				>
-					<div className={`${this.props.className}-map map${i}`} key="map">
+					{/*<div className={`${this.props.className}-map map${i}`} key="map">
 						<img src={item.map} width="100%" />
-					</div>
+					</div>*/}
 					<div className={`${this.props.className}-pic pic${i}`} key="pic">
 						<img src={item.pic} width="100%" />
 					</div>
@@ -123,11 +129,19 @@ export default class DetailSwitchDemo extends React.Component {
 
 		const textChildren = dataArray.map((item, i) => {
 			const { title, content, background } = item;
+
 			return (<Element key={i}>
 				<QueueAnim type="bottom" duration={1000} delay={[!i ? this.state.delay + 500 : 800, 0]}>
 					<h1 key="h1">{title}</h1>
 					<em key="em" style={{ background }} />
-					<p key="p">{content}</p>
+					<p key="p">
+						{content}
+						{
+							item.detail
+								? <Link to={item.detail}>详情</Link>
+								: null
+						}</p>
+
 				</QueueAnim>
 			</Element>);
 		});

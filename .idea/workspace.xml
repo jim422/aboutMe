@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="添加目录结构，" />
+    <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="添加目录结构，">
+      <change afterPath="$PROJECT_DIR$/src/about_me/assets/appeal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/about_me/assets/platformConfig.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about_me/components/ProjectDescribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about_me/components/ProjectDescribe.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +30,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="159" />
-          <entry key="js" value="3417" />
+          <entry key="js" value="3965" />
           <entry key="json" value="124" />
           <entry key="md" value="948" />
         </counts>
@@ -34,7 +39,7 @@
         <counts>
           <entry key="CSS" value="159" />
           <entry key="JSON" value="124" />
-          <entry key="JavaScript" value="3417" />
+          <entry key="JavaScript" value="3965" />
           <entry key="Markdown" value="937" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
@@ -42,9 +47,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
-          <entry key="js" value="36" />
+          <entry key="js" value="38" />
           <entry key="json" value="4" />
-          <entry key="md" value="3" />
+          <entry key="md" value="4" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
@@ -52,8 +57,8 @@
         <counts>
           <entry key="CSS" value="4" />
           <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="36" />
-          <entry key="Markdown" value="2" />
+          <entry key="JavaScript" value="38" />
+          <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="TypeScript" value="2" />
         </counts>
@@ -70,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
+            <state relative-caret-position="-7">
               <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
@@ -83,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
+            <state relative-caret-position="-7">
               <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
             </state>
           </provider>
@@ -92,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/appeal/components/RecordList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="-7">
               <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="50" />
             </state>
           </provider>
@@ -101,20 +106,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/appeal/components/RecordItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="-7">
+              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/about_me/containers/Projects.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="174">
-                <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/src/about_me/components/ProjectDescribe.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +137,8 @@
         <entry file="file://$PROJECT_DIR$/src/platform_config/本次项目总结.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="291">
-                <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <first_editor relative-caret-position="44">
+                <caret line="1" column="51" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="51" />
               </first_editor>
               <second_editor />
             </state>
@@ -134,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/controllers/api/appeal/appeal_form.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-7">
               <caret selection-end-line="73" selection-end-column="1" />
             </state>
           </provider>
@@ -143,7 +157,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/about_me/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-507">
+            <state relative-caret-position="-7">
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -154,7 +168,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="-7">
               <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
             </state>
           </provider>
@@ -178,8 +192,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>contain-class</find>
-      <find>findDOMNode</find>
       <find>require</find>
       <find>image</find>
       <find>imgWrapper</find>
@@ -208,6 +220,8 @@
       <find>public</find>
       <find>page-last</find>
       <find>inVisibleArea</find>
+      <find>map</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace>this</replace>
@@ -238,7 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/about_me/index.js" />
         <option value="$PROJECT_DIR$/public/index.js" />
         <option value="$PROJECT_DIR$/server/controllers/api/index.js" />
         <option value="$PROJECT_DIR$/server/controllers/api/appeal/index.js" />
@@ -283,12 +296,13 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/webpack.develope.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/appeal/actions/index.js" />
         <option value="$PROJECT_DIR$/src/platform_config/本次项目总结.md" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/about_me/util/inVisibleArea.js" />
         <option value="$PROJECT_DIR$/src/appeal/本次项目总结..md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/about_me/components/ProjectDescribe.js" />
       </list>
     </option>
   </component>
@@ -357,14 +371,20 @@
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="aboutMe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="appeal" type="462c0819:PsiDirectoryNode" />
+              <item name="about_me" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="aboutMe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="appeal" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="about_me" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aboutMe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aboutMe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="platform_config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,18 +442,19 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public/about_me/assets" />
-      <recent name="$PROJECT_DIR$/public/assets/image" />
-      <recent name="$PROJECT_DIR$/public/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/config" />
       <recent name="$PROJECT_DIR$/public/appeal/ruducers" />
       <recent name="$PROJECT_DIR$/public/appeal/constants" />
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/about_me/assets" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public/about_me/assets" />
+      <recent name="$PROJECT_DIR$/public/assets/image" />
+      <recent name="$PROJECT_DIR$/public/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -544,7 +565,7 @@
       <workItem from="1536644900207" duration="8016000" />
       <workItem from="1536672349479" duration="261000" />
       <workItem from="1536714884587" duration="125000" />
-      <workItem from="1536715054590" duration="4354000" />
+      <workItem from="1536715054590" duration="8972000" />
     </task>
     <task id="LOCAL-00001" summary="添加目录结构，">
       <created>1535373432267</created>
@@ -557,7 +578,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="493525000" />
+    <option name="totallyTimeSpent" value="498143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,11 +594,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.20428015" side_tool="true" weight="0.21387696" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.79571986" visible="true" weight="0.2267525" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.79571986" visible="true" weight="0.2267525" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32889965" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.5445783" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.52891564" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32771084" />
@@ -674,18 +695,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2689" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/api/platform_config/get_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -906,7 +915,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/about_me/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-507">
+        <state relative-caret-position="-7">
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -915,14 +924,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="-7">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
+        <state relative-caret-position="-7">
           <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -933,7 +942,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/api/appeal/appeal_form.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-7">
           <caret selection-end-line="73" selection-end-column="1" />
         </state>
       </provider>
@@ -957,40 +966,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
+        <state relative-caret-position="-7">
           <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/appeal/components/RecordList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="-7">
           <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/appeal/components/RecordItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/appeal/本次项目总结..md">
+    <entry file="file://$PROJECT_DIR$/src/appeal/本次项目总结.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="198">
             <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/platform_config/本次项目总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="291">
-            <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>
@@ -1004,10 +996,44 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="174">
-            <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <first_editor relative-caret-position="330">
+            <caret line="15" column="157" selection-start-line="15" selection-start-column="157" selection-end-line="15" selection-end-column="157" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/appeal/components/RecordItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/about_me/containers/Projects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/platform_config/本次项目总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="44">
+            <caret line="1" column="51" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/about_me/components/ProjectDescribe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
