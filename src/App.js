@@ -53,6 +53,7 @@ class App extends Component {
 				</Content>
 
 				<Footer className='footer'>
+					&nbsp;&nbsp;&nbsp;
 				</Footer>
 			</Layout>
 		)
