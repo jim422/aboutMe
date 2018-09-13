@@ -62,24 +62,6 @@ module.exports = {
 			'process.env.NODE_ENV': JSON.stringify('production'),
 			'process.my_img_path': ENV_CONFIG
 		}),
-		new SWPrecacheWebpackPlugin({
-			dontCacheBustUrlsMatching: /\.\w{8}\./,
-			filename: 'service-worker.js',
-			logger(message) {
-				if (message.indexOf('Total precache size is') === 0) {
-					return;
-				}
-				if (message.indexOf('Skipping static resource') === 0) {
-
-					return;
-				}
-				console.log(message);
-			},
-			minify: true,
-			navigateFallback: path.resolve(__dirname, '/index.html'),
-			navigateFallbackWhitelist: [/^(?!\/__).*/],
-			staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/],
-		}),
 
 	],
 	module: {
