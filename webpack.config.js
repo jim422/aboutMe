@@ -43,7 +43,7 @@ module.exports = {
 		new webpack.HotModuleReplacementPlugin(),
 		new CleanWebpackPlugin(['dist']),
 		new ExtractTextWebpackPlugin({
-			filename: 'css/index.css',
+			filename: 'css/javascript.css',
 			disable: true //由于是link标签引入，不支持热更新开发模式下禁用，生产模式下开启
 		}),
 		new HtmlWebpackPlugin({

@@ -8,6 +8,8 @@ import NavHead from './navbar/NavHead'
 import AboutMe from './about_me/index.js'
 import PlatformConfig from './platform_config/PlatformConfig'
 import Appeal from './appeal/index'
+import JavaScript from './javascript/index'
+import Scope from './javascript/component/Scope';
 
 const { Header, Content, Footer } = Layout;
 
@@ -44,6 +46,12 @@ class App extends Component {
 							component={ Appeal }
 						/>
 
+						{/*<Route
+							path='/javascript'
+							exact
+							component={ JavaScript }
+						/>*/}
+						<JavaScript/>
 
 						<Redirect
 							to='/aboutMe'
