@@ -46,11 +46,7 @@ class App extends Component {
 							component={ Appeal }
 						/>
 
-						{/*<Route
-							path='/javascript'
-							exact
-							component={ JavaScript }
-						/>*/}
+
 						<JavaScript/>
 
 						<Redirect

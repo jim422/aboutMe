@@ -1,16 +1,6 @@
 import React, { Component } from 'react'
 
 
-
-function foo(a) {
-	var a = 'inner'
-	eval(bar)//inner
-}
-var a = 'outer';
-var bar = 'function bar() {console.log(a)}; bar()';
-foo(a);
-eval(bar);//outer
-
 export default function Scope(props) {
 
 	return(
@@ -29,7 +19,7 @@ export default function Scope(props) {
 
 				作用域嵌套关系是由函数声明时所处的位置决定的，例如在上面的栗子当中的作用域嵌套关系就是 window > foo > bar。
 				但是有一种代码可以在运行时修改作用域，这就是eval（不太建议使用，会导致性能降低）。
-				<img src={require('../assets/scope_3.png')} className={'img-container'}/>
+				<img src={ require('../assets/scope_3.png') } className={'img-container'}/>
 
 	</p>
 

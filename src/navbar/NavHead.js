@@ -51,6 +51,23 @@ export default class NavHead extends Component {
 							</MenuItem>
 						</MenuItemGroup>
 					</SubMenu>
+
+					<SubMenu
+						title='javascript'
+					>
+						<MenuItemGroup>
+							<MenuItem
+								key='/javascript'
+							>
+								javascript
+							</MenuItem>
+							<MenuItem
+								key='/javascript/scope'
+							>
+								作用域
+							</MenuItem>
+						</MenuItemGroup>
+					</SubMenu>
 				</Menu>
 			</div>
 
