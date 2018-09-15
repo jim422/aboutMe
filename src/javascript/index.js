@@ -5,6 +5,7 @@ import JsContainer from './container/JavaScript'
 import Scope from './component/Scope'
 import Closure from './component/Closure'
 import Listener from './component/Listener'
+import Cors from './component/Cors'
 
 import './css/index.css'
 
@@ -35,6 +36,11 @@ class JavaScript extends Component {
 				<Route
 					path='/javascript/listener'
 					component={ Listener }
+				/>
+
+				<Route
+					path='/javascript/cors'
+					component={ Cors }
 				/>
 
 			</div>
