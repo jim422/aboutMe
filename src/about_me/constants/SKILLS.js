@@ -8,11 +8,11 @@ const SKILLS = [{
 	backgroundColor: 'rgba(180, 43, 25, 0.8)'
 }, {
 	title: 'react',
-	content: '了解react',
+	content: '了解react，https://github.com/jim422/react-redux-node',
 	backgroundColor: 'rgba(97, 218, 251, 0.7)'
 }, {
 	title: 'webpack',
-	content: 'rgba(141, 214, 249, 0.5);',
+	content: '了解webpack基本用法',
 	backgroundColor: 'rgba(141, 214, 249, 0.5)'
 }];
 
