@@ -5,6 +5,7 @@ router.post('/allowOrigin', function (req, res) {
 	let origin = req.headers.origin;
 	res.setHeader('Access-Control-Allow-Origin', origin);
 	res.setHeader('Access-Control-Allow-Headers', 'name');
+	res.setHeader('Access-Control-Allow-Credentials', 'name')
 	res.end(origin)
 });
 

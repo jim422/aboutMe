@@ -66,6 +66,11 @@ export default class NavHead extends Component {
 							>
 								作用域
 							</MenuItem>
+							<MenuItem
+								key='/javascript/cors'
+							>
+								跨域
+							</MenuItem>
 						</MenuItemGroup>
 					</SubMenu>
 				</Menu>

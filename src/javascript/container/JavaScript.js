@@ -26,8 +26,8 @@ export default class JavaScript extends Component {
 
 					<li>
 						<Link
-							to='/javascript/listener'
-						>事件委托</Link>
+							to='/javascript/cors'
+						>跨域</Link>
 					</li>
 				</ul>
 
