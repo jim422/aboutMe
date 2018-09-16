@@ -91,8 +91,9 @@ export default class SkillTree extends Component {
 
 				<div className='skill-describe'>
 					<SkillDescribe
-						title= { currentSkill['title'] }
-						content= { currentSkill['content'] }
+						title = { currentSkill['title'] }
+						content = { currentSkill['content'] }
+						detail ={ currentSkill['detail'] }
 					/>
 				</div>
 			</div>

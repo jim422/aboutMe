@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="828185f0-28a7-465c-a1e2-60a26abd6190" name="Default" comment="添加目录结构，">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about_me/components/SkillDescribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about_me/components/SkillDescribe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/about_me/constants/SKILLS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about_me/constants/SKILLS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about_me/containers/SkillTree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/about_me/containers/SkillTree.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,16 +30,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="308" />
-          <entry key="js" value="12207" />
-          <entry key="json" value="124" />
+          <entry key="js" value="12388" />
+          <entry key="json" value="125" />
           <entry key="md" value="955" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="308" />
-          <entry key="JSON" value="124" />
-          <entry key="JavaScript" value="12207" />
+          <entry key="JSON" value="125" />
+          <entry key="JavaScript" value="12388" />
           <entry key="Markdown" value="944" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
@@ -46,7 +48,7 @@
         <counts>
           <entry key="css" value="7" />
           <entry key="js" value="91" />
-          <entry key="json" value="5" />
+          <entry key="json" value="6" />
           <entry key="md" value="5" />
           <entry key="ts" value="5" />
         </counts>
@@ -54,7 +56,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="JavaScript" value="91" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -106,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/about_me/components/SkillDescribe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="242">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -118,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/about_me/containers/SkillTree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1389">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            <state relative-caret-position="495">
+              <caret line="95" column="18" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="18" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -130,8 +132,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/about_me/constants/SKILLS.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+            <state relative-caret-position="396">
+              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -153,18 +164,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="452">
               <caret line="33" column="42" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/react-redux/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -260,8 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/appeal/validate/validateRecordItem.js" />
-        <option value="$PROJECT_DIR$/public/knockout/index.js" />
         <option value="$PROJECT_DIR$/public/router/routerConfig.js" />
         <option value="$PROJECT_DIR$/public/router/createNav.js" />
         <option value="$PROJECT_DIR$/public/react/index.js" />
@@ -273,7 +270,6 @@
         <option value="$PROJECT_DIR$/public/App.js" />
         <option value="$PROJECT_DIR$/public/platform_config/component/common_platform_list.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/config/webpack.develope.js" />
         <option value="$PROJECT_DIR$/src/appeal/actions/index.js" />
         <option value="$PROJECT_DIR$/src/platform_config/本次项目总结.md" />
@@ -310,6 +306,9 @@
         <option value="$PROJECT_DIR$/server/controllers/api/cors/allowOrigin/index.js" />
         <option value="$PROJECT_DIR$/src/javascript/component/Cors.js" />
         <option value="$PROJECT_DIR$/src/javascript/container/JavaScript.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/about_me/containers/SkillTree.js" />
+        <option value="$PROJECT_DIR$/src/about_me/components/SkillDescribe.js" />
         <option value="$PROJECT_DIR$/src/about_me/constants/SKILLS.js" />
       </list>
     </option>
@@ -591,7 +590,7 @@
       <workItem from="1536809177223" duration="18203000" />
       <workItem from="1537008554361" duration="851000" />
       <workItem from="1537011413911" duration="9984000" />
-      <workItem from="1537061171850" duration="6806000" />
+      <workItem from="1537061171850" duration="7654000" />
     </task>
     <task id="LOCAL-00001" summary="添加目录结构，">
       <created>1535373432267</created>
@@ -604,7 +603,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="542860000" />
+    <option name="totallyTimeSpent" value="543708000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -620,11 +619,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.20428015" side_tool="true" weight="0.21387696" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.79571986" visible="true" weight="0.23819743" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.79571986" visible="true" weight="0.23819743" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32889965" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.30361447" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.30361447" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.32891566" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.32771084" />
@@ -948,11 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-498" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1081,10 +1075,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/about_me/components/SkillDescribe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="242">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -1093,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/about_me/containers/SkillTree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1389">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+        <state relative-caret-position="495">
+          <caret line="95" column="18" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="18" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -1103,8 +1104,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/about_me/constants/SKILLS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        <state relative-caret-position="396">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
     </entry>
