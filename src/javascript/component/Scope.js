@@ -8,8 +8,14 @@ export default function Scope(props) {
 			<h3>作用域</h3>
 			<p>
 				作用域其实就是一个能存储变量的值，并能在之后对这个值进行访问或更改的一块儿区域或范围。
-				<br/>作用域可以大体分为全局作用域，函数作用域和块儿作用域。
-				<br/>全局变量可在任何地方以window.xxx的方式访问，但是函数作用域内变量无法在函数作用域外访问
+			</p>
+
+			<p>
+				作用域可以大体分为全局作用域，函数作用域和块儿作用域。
+			</p>
+
+			<p>
+				全局变量可在任何地方以window.xxx的方式访问，但是函数作用域内变量无法在函数作用域外访问
 				<img src={require('../assets/scope_1.jpg')} className={'img-container'}/>
 			</p>
 
@@ -31,7 +37,6 @@ export default function Scope(props) {
 				下面的例子就是就是一个经典的，假如页面由十个元素，点击某个元素时显示它是第几个，现在我们可以用let很容易的实现这个功能，for循环头部的let将i绑定到了每个for的循环块儿中，每循环一次都会产生一个新的块儿作用域
 				<img src={ require('../assets/scope_4.png') }/>
 			</p>
-
 		</div>
 
 	)
