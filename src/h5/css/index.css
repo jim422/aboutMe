@@ -1,0 +1,32 @@
+.h5-container {
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.h5-container .page-a {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/a/page-a-bg.png');
+    position: absolute;
+    z-index: 5;
+}
+.h5-container .page-b {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/b/page-b-bg.png');
+    position: absolute;
+    z-index: 5;
+}
+.h5-container .page-c {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/c/page-c-bg.png');
+    position: absolute;
+    z-index: 5;
+}
+
+.bg-adaptive {
+    background-size: 100% 100%;
+}

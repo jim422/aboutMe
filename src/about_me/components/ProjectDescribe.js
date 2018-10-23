@@ -118,9 +118,6 @@ export default class DetailSwitchDemo extends React.Component {
 					ease={['easeOutCubic', 'easeInQuad']}
 					key="img-wrapper"
 				>
-					{/*<div className={`${this.props.className}-map map${i}`} key="map">
-						<img src={item.map} width="100%" />
-					</div>*/}
 					<div className={`${this.props.className}-pic pic${i}`} key="pic">
 						<img src={item.pic} width="100%" />
 					</div>

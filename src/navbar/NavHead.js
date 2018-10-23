@@ -78,6 +78,10 @@ export default class NavHead extends Component {
 							</MenuItem>
 						</MenuItemGroup>
 					</SubMenu>
+
+					<MenuItem
+						key='/h5'
+					>h5</MenuItem>
 				</Menu>
 			</div>
 
