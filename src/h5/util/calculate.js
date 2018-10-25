@@ -9,5 +9,16 @@ function calculate() {
 
 }
 
-window.addEventListener(resizeEvt, calculate, false);
-document.addEventListener('DOMContentLoaded', calculate, false);
+function resetFontSize() {
+	docEl.style.fontSize = '16px'
+}
+
+export function fireCalculate() {
+	window.addEventListener(resizeEvt, calculate, false);
+	document.addEventListener('DOMContentLoaded', calculate, false);
+}
+
+export function removeCalculate() {
+	window.removeEventListener(resizeEvt, calculate);
+	resetFontSize()
+}

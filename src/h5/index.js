@@ -3,7 +3,7 @@ import PageA from './container/PageA'
 import PageB from './container/PageB'
 import PageC from './container/PageC'
 import './css/index.css'
-import './util/calculate'
+import {fireCalculate, removeCalculate} from './util/calculate';
 
 class H5 extends Component {
 	constructor(props) {
@@ -12,11 +12,21 @@ class H5 extends Component {
 			currentPage: 'page-a'
 		}
 	}
+
+	componentWillMount() {
+		fireCalculate()
+	}
+
+	componentWillUnmount() {
+		removeCalculate()
+	}
+
 	changePage = (e) => {
 		this.setState({
 			currentPage: e.target.value
 		})
-	}
+	};
+
 	render() {
 		return (
 			<div className="h5-container">
