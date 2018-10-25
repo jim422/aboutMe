@@ -59,9 +59,7 @@ module.exports = {
 			paths: glob.sync(path.resolve('src/*.html'))
 		}),
 		new webpack.DefinePlugin({
-			'process.env': {
-				NODE_ENV: JSON.stringify('production')
-			},
+			'NODE_ENV': JSON.stringify('production'),
 			'process.my_img_path': ENV_CONFIG
 		}),
 
