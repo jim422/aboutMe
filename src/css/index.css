@@ -5,6 +5,9 @@
 ul li {
     list-style: none;
 }
+.layout {
+    min-height: 100vh;
+}
 .header {
     background: -webkit-linear-gradient(#f5fefe, white); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(#f5fefe, white); /* Opera 11.1 - 12.0 */

@@ -4,12 +4,12 @@
 .page-first {
     margin-top: -64px;
 }
+.page-last {
+    margin-bottom: -70px;
+}
 .middle {
     margin: 0 auto;
 }
 .padding-top-20 {
     padding-top: 20px;
-}
-.page-last {
-    margin-bottom: -70px;
 }

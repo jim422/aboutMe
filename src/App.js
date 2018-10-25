@@ -16,7 +16,7 @@ const { Header, Content, Footer } = Layout;
 class App extends Component {
 	render() {
 		return (
-			<Layout style={{ minHeight: '100vh' }}>
+			<Layout className='layout'>
 				<Header className='header'>
 					<Route
 						component={ NavHead }
