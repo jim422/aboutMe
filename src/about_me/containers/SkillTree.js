@@ -52,7 +52,7 @@ export default class SkillTree extends Component {
 		if (eventType === 'end') {
 			this.setState({ current })
 		}
-	}
+	};
 
 	render() {
 		const { current } = this.state;
@@ -75,11 +75,9 @@ export default class SkillTree extends Component {
 				>
 					{
 						this.state.show
-							? [<div className='center' key={ 1 }>
+							&& <div className='center' key={ 1 }>
 									<h3>Skill Tree</h3>
-								</div>]
-							: null
-
+								</div>
 					}
 				</QueueAnim>
 
