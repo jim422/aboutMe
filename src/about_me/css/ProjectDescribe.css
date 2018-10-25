@@ -22,9 +22,9 @@
     height: 100%;
 }
 
-.details-switch-demo-pic,
-.details-switch-demo-map {
+.details-switch-demo-pic {
     position: absolute;
+    cursor: pointer;
 }
 
 .details-switch-demo-pic {

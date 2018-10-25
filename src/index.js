@@ -6,7 +6,7 @@ import { Provider } from 'react-redux'
 import store from './store/index'
 import App from './App.js'
 
-console.log(process.env.NODE_ENV, process.my_img_path);
+console.log(NODE_ENV, process.my_img_path);
 
 
 ReactDOM.render(
@@ -20,7 +20,3 @@ ReactDOM.render(
 	document.getElementById('root')
 );
 
-/*
-if (module.hot) {
-	module.hot.accept()
-}*/

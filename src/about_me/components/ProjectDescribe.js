@@ -4,20 +4,10 @@ import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
 import { Icon } from 'antd';
 import { Link } from 'react-router-dom'
+import { CommonModal } from '../../module_common/react_modal/common_modal';
 import '../css/ProjectDescribe.css';
 
 const Element = BannerAnim.Element;
-
-const textData = {
-	content: 'Taiwan called motorcycle, motor bike [1] or a motorcycle,' +
-	' the motorcycle referred to in the mainland, ' +
-	'Hong Kong and Southeast Asia known as motorcycles [2], ' +
-	'is a driven by the engine, ' +
-	'operated by a hand or two directions three-wheeled vehicles, is a means of transport. ' +
-	'In some military or police applications, will add a side compartment and a secondary wheel, ' +
-	'become a special three-wheeled motorcycle, mobility Zheyi common plug-in auxiliary wheels.',
-	title: 'Motorcycle',
-};
 
 let dataArray = [
 	{
@@ -36,15 +26,7 @@ let dataArray = [
 		color: '#FF4058',
 		background: '#FC1E4F',
 	},
-	/*{
-		pic: 'https://zos.alipayobjects.com/rmsportal/zMswSbPBiQKvARY.png',
-		title: '账号申诉',
-		content: '根据平台的配置项展示用户需要输入的内容, 运用到的技术有 react + redux + antd，<Link to="/react/appeal">详细</Link>',
-		color: '#9FDA7F',
-		background: '#64D487',
-	},*/
 ];
-//dataArray = dataArray.map(item => ({ ...item, ...textData }));
 
 export default class DetailSwitchDemo extends React.Component {
 	static defaultProps = {
@@ -60,6 +42,8 @@ export default class DetailSwitchDemo extends React.Component {
 				{ translateX: [0, 300], opacity: [1, 0] },
 				{ translateX: [0, -300], opacity: [1, 0] },
 			],
+			visible: false,
+			modalChildren: null
 		};
 		this.oneEnter = false;
 	}
@@ -69,7 +53,7 @@ export default class DetailSwitchDemo extends React.Component {
 			this.setState({ delay: 300 });
 			this.oneEnter = true;
 		}
-	}
+	};
 
 	onLeft = () => {
 		let showInt = this.state.showInt;
@@ -108,6 +92,19 @@ export default class DetailSwitchDemo extends React.Component {
 		return 1000;
 	};
 
+	showInModal = (e) => {
+		this.setState({
+			visible: true,
+			modalChildren: <img src={e.target.getAttribute('src')} alt=""/>
+		})
+	};
+
+	closeModal = () => {
+		this.setState({
+			visible: false
+		})
+	};
+
 	render() {
 		const imgChildren = dataArray.map((item, i) => (
 			<Element key={i} style={{ background: item.color }} leaveChildHide>
@@ -119,7 +116,7 @@ export default class DetailSwitchDemo extends React.Component {
 					key="img-wrapper"
 				>
 					<div className={`${this.props.className}-pic pic${i}`} key="pic">
-						<img src={item.pic} width="100%" />
+						<img src={item.pic} width="100%" onClick={this.showInModal}/>
 					</div>
 				</QueueAnim>
 			</Element>));
@@ -135,8 +132,7 @@ export default class DetailSwitchDemo extends React.Component {
 						{content}
 						{
 							item.detail
-								? <Link to={item.detail}>详情</Link>
-								: null
+								&& <Link to={item.detail}>详情</Link>
 						}</p>
 
 				</QueueAnim>
@@ -161,6 +157,7 @@ export default class DetailSwitchDemo extends React.Component {
 				>
 					{imgChildren}
 				</BannerAnim>
+
 				<BannerAnim
 					prefixCls={`${this.props.className}-text-wrapper`}
 					sync
@@ -174,11 +171,21 @@ export default class DetailSwitchDemo extends React.Component {
 				>
 					{textChildren}
 				</BannerAnim>
+
 				<TweenOneGroup enter={{ opacity: 0, type: 'from' }} leave={{ opacity: 0 }}>
 					{this.state.showInt && <Icon type="left" key="left" onClick={this.onLeft} />}
 					{this.state.showInt < dataArray.length - 1 && <Icon type="right" key="right" onClick={this.onRight} />}
 				</TweenOneGroup>
 			</div>
+
+			<CommonModal
+				visible={this.state.visible}
+				onOk={this.closeModal}
+				onCancel={this.closeModal}
+				width={800}
+			>
+				{this.state.modalChildren}
+			</CommonModal>
 		</div>);
 	}
 }

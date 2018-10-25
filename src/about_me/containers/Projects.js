@@ -61,8 +61,7 @@ export default class Projects extends Component {
 
 					}
 				</QueueAnim>
-				<ProjectDescribe
-				/>
+				<ProjectDescribe />
 			</div>
 		)
 	}
