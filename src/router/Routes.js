@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Route, Switch, Redirect} from 'react-router-dom';
+import NoMatch from '../error_pages/NotMatch'
 import {config} from './config';
 
 class Routes extends Component {
@@ -36,8 +37,4 @@ class Routes extends Component {
 
 export {
 	Routes,
-}
-
-function NoMatch() {
-	return <h1>404</h1>
 }
