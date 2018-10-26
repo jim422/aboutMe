@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default function Scope(props) {
 
 	return (
-		<div>
+		<div className='javascript-container'>
 			<h3>作用域</h3>
 			<p>
 				作用域其实就是一个能存储变量的值，并能在之后对这个值进行访问或更改的一块儿区域或范围。

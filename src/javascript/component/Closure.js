@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 export default function Closure(props) {
 	return (
-		<div>
+		<div className='javascript-container'>
 			<h3>闭包</h3>
 			<p>我觉得对于前端来说这个话题是逃避不了的，而且这种东西很难用离两句话讲清楚，总感觉闭包是js的一个隐蔽的一面，所以我们从下面的一段js代码开始</p>
 			<img src={ require('../assets/closure_1.png') } className='img-container'/>

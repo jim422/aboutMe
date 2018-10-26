@@ -10,28 +10,27 @@ export default class JavaScript extends Component {
 
 	render() {
 		return(
-			<div className='skill-list'>
-				<ul>
-					<li>
-						<Link
-							to="/javascript/scope"
-						>作用域</Link>
-					</li>
+				<div className='skill-list'>
+					<ul>
+						<li>
+							<Link
+								to="/javascript/scope"
+							>作用域</Link>
+						</li>
 
-					<li>
-						<Link
-							to='/javascript/closure'
-						>闭包</Link>
-					</li>
+						<li>
+							<Link
+								to='/javascript/closure'
+							>闭包</Link>
+						</li>
 
-					<li>
-						<Link
-							to='/javascript/cors'
-						>跨域</Link>
-					</li>
-				</ul>
-
-			</div>
+						<li>
+							<Link
+								to='/javascript/cors'
+							>跨域</Link>
+						</li>
+					</ul>
+				</div>
 		)
 	}
 }

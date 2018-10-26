@@ -56,7 +56,7 @@ export default class Cors extends Component {
 
 	render() {
 		return(
-			<div>
+			<div className='javascript-container'>
 				<p>jsonp - client: localhsot:8080; server:localhost:9090</p>
 				<div>your query{JSON.stringify(this.state.data)}</div>
 				<br/><br/>
