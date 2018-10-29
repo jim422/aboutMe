@@ -14,42 +14,57 @@ let config = {
 	routes: [{
 		path: '/aboutMe',
 		exact: true,
-		component: AboutMe
+		component: AboutMe,
+		title: 'aboutMe',
 	}, {
-		path: '/knockout/platformConfig',
 		exact: true,
-		component: PlatformConfig
+		title: 'knockout',
+		children: [{
+			path: '/knockout/platformConfig',
+			exact: true,
+			component: PlatformConfig,
+			title: '平台配置'
+		}]
 	}, {
 		path: '/react/appeal',
 		exact: true,
 		component: Appeal,
+		title: 'rect + antd',
 	}, {
 		path: '/h5',
 		exact: true,
-		component: H5
+		component: H5,
+		title: 'h5',
 	}, {
 		path: '/javascript',
 		exact: true,
-		component: JavaScript
-	}, {
-		path: '/javascript/scope',
-		exact: true,
-		component: Scope
-	}, {
-		path: '/javascript/closure',
-		exact: true,
-		component: Closure
-	}, {
-		path: '/javascript/listener',
-		exact: true,
-		component: Listener
-	}, {
-		path: '/javascript/cors',
-		exact: true,
-		component: Cors
-	}]
+		component: JavaScript,
+		title: 'javascript',
+		children: [{
+			path: '/javascript/scope',
+			exact: true,
+			component: Scope,
+			title: '作用域',
+		}, {
+			path: '/javascript/closure',
+			exact: true,
+			component: Closure,
+			title: '闭包',
+		}, {
+			path: '/javascript/listener',
+			exact: true,
+			component: Listener,
+			title: '事件',
+		}, {
+			path: '/javascript/cors',
+			exact: true,
+			component: Cors,
+			title: '跨域',
+		}],
+	},
+	],
 };
 
 export {
-	config
+	config,
 }

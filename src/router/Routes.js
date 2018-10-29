@@ -9,13 +9,25 @@ class Routes extends Component {
 	}
 
 	createRoutes(routes) {
-		return routes.map(item => {
-			return <Route
-				key={item.path}
-				{...item}
-			/>
+		let routeList = [];
+
+		this.loop(routeList, routes);
+		return routeList;
+	}
+
+	loop(container, routes) {
+		routes.forEach(item => {
+			item.children
+				? this.loop(container, item.children)
+				: container.push(
+					<Route
+						key={item.path}
+						{...item}
+					/>
+				)
 		})
 	}
+
 
 	render() {
 

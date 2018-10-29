@@ -4,8 +4,7 @@ import { Route } from 'react-router-dom'
 import './css/index.css'
 
 //组件
-import NavHead from './navbar/NavHead'
-import {Routes} from './router/Routes'
+import {Routes, NavBar} from './router/index'
 
 const { Header, Content, Footer } = Layout;
 
@@ -15,7 +14,7 @@ class App extends Component {
 			<Layout className='layout'>
 				<Header className='header'>
 					<Route
-						component={ NavHead }
+						component={ NavBar }
 					/>
 				</Header>
 
