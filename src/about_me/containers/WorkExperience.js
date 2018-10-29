@@ -64,10 +64,10 @@ export default class WorkExperience extends Component {
 					}
 				</QueueAnim>
 
-				<Steps direction="vertical" current={1} className='padding-top-20'>
-					<Step title="2016/08" description=" 开始前端工程师的职业生涯" />
-					<Step title="2016/09" description=" 离开微播易" />
-					<Step title="当前" description="expecting" />
+				<Steps direction="vertical" current={2} className='padding-top-20'>
+					<Step title="2016/08" description="入职微播易" />
+					<Step title="2018/09" description="离开微播易" />
+					<Step title="2018/10" description="入职用友" />
 				</Steps>
 			</div>
 		)
