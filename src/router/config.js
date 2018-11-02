@@ -17,7 +17,6 @@ let config = {
 		component: AboutMe,
 		title: 'aboutMe',
 	}, {
-		exact: true,
 		title: 'knockout',
 		children: [{
 			path: '/knockout/platformConfig',
@@ -36,11 +35,13 @@ let config = {
 		component: H5,
 		title: 'h5',
 	}, {
-		path: '/javascript',
-		exact: true,
-		component: JavaScript,
 		title: 'javascript',
 		children: [{
+			path: '/javascript',
+			exact: true,
+			component: JavaScript,
+			title: 'javascript'
+		},{
 			path: '/javascript/scope',
 			exact: true,
 			component: Scope,
