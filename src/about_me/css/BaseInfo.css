@@ -45,8 +45,8 @@
 }
 .person-info {
     position: absolute;
-    top: 400px;
-    left: 765px;
+    top: 70%;
+    left: 65%;
     width: 500px;
     text-align: center;
 }
