@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Form, Input } from 'antd'
-import { validateLink } from '../validate/validateLink';
+import React from 'react';
+import { Form, Input } from 'antd';
+import validateLink from '../validate/validateLink';
 
 const FormItem = Form.Item;
 
@@ -13,13 +13,13 @@ export default function InputLink(props) {
 					rules: [
 						{
 							required: true,
-							validator: validateLink(pattern)
-						}
-					]
+							validator: validateLink(pattern),
+						},
+					],
 				})(
-					<Input className={className}/>
+					<Input className={className} />,
 				)
 			}
 		</FormItem>
-	)
+	);
 }

@@ -1,10 +1,10 @@
-let clientHeight = document.body.clientHeight;
+const clientHeight = document.body.clientHeight;
 
 function inVisibleArea({ el }) {
-	let elTopInView = window.scrollY + clientHeight > el.offsetTop + 100;
-	let elBottomInView = window.scrollY + clientHeight <= el.offsetTop + el.offsetHeight;
+	const elTopInView = window.scrollY + clientHeight > el.offsetTop + 100;
+	const elBottomInView = window.scrollY + clientHeight <= el.offsetTop + el.offsetHeight;
 
-	return elTopInView && elBottomInView
+	return elTopInView && elBottomInView;
 }
 
-export default inVisibleArea
+export default inVisibleArea;

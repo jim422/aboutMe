@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import TweenOne, { TweenOneGroup, ticker } from 'rc-tween-one'
+import TweenOne, { ticker } from 'rc-tween-one';
 
 //css
-import '../css/BaseInfo.css'
+import '../css/BaseInfo.css';
 
 class AboutMeLogo extends Component {
 	static defaultProps = {
@@ -19,7 +19,7 @@ class AboutMeLogo extends Component {
 		this.state = {};
 		this.interval = null;
 		this.gather = true;
-		this.intervalTime = 9000
+		this.intervalTime = 9000;
 	}
 
 	componentDidMount() {
@@ -39,11 +39,11 @@ class AboutMeLogo extends Component {
 		this.componentWillUnmount();
 	};
 
-	onMouseLeave = ()  => {
+	onMouseLeave = () => {
 		if (this.gather) {
 			this.updateTweenData();
 		}
-		this.interval = ticker.interval(this.updateTweenData, this.intervalTime)
+		this.interval = ticker.interval(this.updateTweenData, this.intervalTime);
 	};
 
 	setDataToDom(data, w, h) {
@@ -53,48 +53,48 @@ class AboutMeLogo extends Component {
 		for (let i = 0; i < w; i += number) {
 			for (let j = 0; j < h; j += number) {
 				if (data[((i + j * w) * 4) + 3] > 100) {
-					this.pointArray.push({ x: i, y: j })
+					this.pointArray.push({ x: i, y: j });
 				}
 			}
 		}
 
-		let children = [];
-		this.pointArray.forEach((item, index) => {
+		const children = [];
+		this.pointArray.forEach((item) => {
 			const wh = Math.random() * this.props.pointSizeMin + this.props.pointSizeMin;
 			const opacity = Math.random() * 0.4 + 0.1;
 
 			children.push((
-				<TweenOne className='point-wrapper' key={index} style={{ left: item.x, top: item.y }}>
+				<TweenOne className='point-wrapper' key={wh} style={{ left: item.x, top: item.y }}>
 					<TweenOne
 						className="point"
 						style={{
 							width: wh,
 							height: wh,
-							opacity: opacity,
-							backgroundColor: `rgb(${Math.round(Math.random() * 95 + 240)}, 158, 194)`
+							opacity,
+							backgroundColor: `rgb(${Math.round(Math.random() * 95 + 240)}, 158, 194)`,
 						}}
 						animation={{
-							y: (Math.random() * 2 -1) * 10 || 5,
-							x: (Math.random() * 2 -1) * 5 || 2.5,
+							y: (Math.random() * 2 - 1) * 10 || 5,
+							x: (Math.random() * 2 - 1) * 5 || 2.5,
 							delay: Math.random() * 1000,
 							duration: 3000,
 							repeat: -1,
 							yoyo: true,
-							ease: 'easeInOutQuad'
+							ease: 'easeInOutQuad',
 						}}
 					/>
 
 				</TweenOne>
-			))
+			));
 		});
 
 		this.setState({
 			children,
-			boxAnim: { opacity: 0, type: 'from', duration: 800}
+			boxAnim: { opacity: 0, type: 'from', duration: 800 },
 		}, () => {
-			this.interval = ticker.interval(this.updateTweenData, this.intervalTime)
-		})
-	};
+			this.interval = ticker.interval(this.updateTweenData, this.intervalTime);
+		});
+	}
 
 	createPointData = () => {
 		const { w, h } = this.props;
@@ -111,7 +111,7 @@ class AboutMeLogo extends Component {
 			ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, w, h);
 			const data = ctx.getImageData(0, 0, w, h).data;
 			this.setDataToDom(data, w, h);
-			this.dom.removeChild(canvas)
+			this.dom.removeChild(canvas);
 		};
 
 		img.crossOrigin = 'anonymous';
@@ -119,8 +119,7 @@ class AboutMeLogo extends Component {
 	};
 
 	gatherData = () => {
-		const children = this.state.children.map(item =>
-			React.cloneElement(item, {
+		const children = this.state.children.map(item => React.cloneElement(item, {
 				animation: {
 					x: 0,
 					y: 0,
@@ -128,12 +127,12 @@ class AboutMeLogo extends Component {
 					scale: 1,
 					delay: Math.random() * 500,
 					duration: 800,
-					ease: 'easeInOutQuint'
-				}
-			})
+					ease: 'easeInOutQuint',
+				},
+			}),
 		);
 
-		this.setState({ children })
+		this.setState({ children });
 	};
 
 	dispersData = () => {
@@ -141,34 +140,33 @@ class AboutMeLogo extends Component {
 		const sideRect = this.sideBox.getBoundingClientRect();
 		const sideTop = sideRect.top - rect.top;
 		const sideLeft = sideRect.left - rect.left;
-		const children = this.state.children.map(item =>
-			React.cloneElement(item, {
+		const children = this.state.children.map(item => React.cloneElement(item, {
 				animation: {
-					x: Math.random() *  rect.width - sideLeft - item.props.style.left,
+					x: Math.random() * rect.width - sideLeft - item.props.style.left,
 					y: Math.random() * rect.height - sideTop - item.props.style.top,
 					opacity: Math.random() * 0.4 + 0.1,
 					scale: Math.random() * 2.4 + 0.1,
 					duration: Math.random() * 500 + 500,
 					ease: 'easeInOutQuint',
-				}
-			})
+				},
+			}),
 		);
 
-		this.setState({ children })
+		this.setState({ children });
 	};
 
 	updateTweenData = () => {
 		this.dom = ReactDOM.findDOMNode(this);
 		this.sideBox = ReactDOM.findDOMNode(this.sideBoxComp);
 		((this.gather && this.dispersData) || this.gatherData)();
-		this.gather = !this.gather
+		this.gather = !this.gather;
 	};
 
 
 	render() {
 		return (
 			<div className={this.props.containClass}>
-				<canvas id="canvas"/>
+				<canvas id="canvas" />
 				<TweenOne
 					animation={this.state.boxAnim}
 					className='right-side blur'
@@ -181,8 +179,8 @@ class AboutMeLogo extends Component {
 					{ this.state.children }
 				</TweenOne>
 			</div>
-		)
+		);
 	}
 }
 
-export default AboutMeLogo
+export default AboutMeLogo;

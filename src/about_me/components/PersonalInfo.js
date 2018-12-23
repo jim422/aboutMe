@@ -1,19 +1,14 @@
-import React, { PureComponent } from 'react'
-import uiKit from '../../../node_modules/uikit/dist/css/uikit.min.css'
-import { Icon } from 'antd'
+import React, { PureComponent } from 'react';
+import { Icon } from 'antd';
 
 class PersonalInfo extends PureComponent {
-	constructor(props) {
-		super(props)
-	}
-
 	render() {
-		return(
+		return (
 			<div>
 				<div className='uk-box-shadow-small uk-box-shadow-hover-large'>
 					<span className='title'>
 						Everything should be made as simple as possible
-						<br/>
+						<br />
 						but not simpler
 					</span>
 					<ul className="info-item">
@@ -29,8 +24,8 @@ class PersonalInfo extends PureComponent {
 					</ul>
 				</div>
 			</div>
-		)
+		);
 	}
 }
 
-export default PersonalInfo
+export default PersonalInfo;

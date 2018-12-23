@@ -1,15 +1,11 @@
-import React, {Component} from 'react'
-import {Route, Switch, Redirect} from 'react-router-dom';
-import NoMatch from '../error_pages/NotMatch'
-import {config} from './config';
+import React, { Component } from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import NoMatch from '../error_pages/NotMatch';
+import { config } from './config';
 
 class Routes extends Component {
-	constructor(props) {
-		super(props)
-	}
-
 	createRoutes(routes) {
-		let routeList = [];
+		const routeList = [];
 
 		this.loop(routeList, routes);
 		return routeList;
@@ -23,30 +19,29 @@ class Routes extends Component {
 					<Route
 						key={item.path}
 						{...item}
-					/>
-				)
-		})
+					/>,
+				);
+		});
 	}
 
 
 	render() {
-
-		return <Switch>
-			<Route
-				exact
-				path='/'
-				render={ () => (<Redirect to="/aboutMe"/>) }
-			/>
-			{
-				this.createRoutes(config.routes)
-			}
-			<Route
-				component={NoMatch}
-			/>
-		</Switch>
+		return (
+			<Switch>
+				<Route
+					exact
+					path='/'
+					render={() => (<Redirect to="/aboutMe" />)}
+				/>
+				{
+					this.createRoutes(config.routes)
+				}
+				<Route
+					component={NoMatch}
+				/>
+			</Switch>
+);
 	}
 }
 
-export {
-	Routes,
-}
+export default Routes;

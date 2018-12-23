@@ -1,5 +1,5 @@
-import axios from 'axios'
-import * as ACTION_TYPES from '../constants/ActionTypes'
+import axios from 'axios';
+import * as ACTION_TYPES from '../constants/ActionTypes';
 
 export const fetchAppealForm = (orderId) => {
 	return function (dispatch) {
@@ -7,10 +7,10 @@ export const fetchAppealForm = (orderId) => {
 			.then((data) => {
 				dispatch({
 					type: ACTION_TYPES.APPEAL_FORM,
-					payload: data.data
-				})
-			})
-	}
+					payload: data.data,
+				});
+			});
+	};
 };
 
 export const fetchAppealReason = (orderId) => (dispatch) => {
@@ -18,7 +18,7 @@ export const fetchAppealReason = (orderId) => (dispatch) => {
 		.then((data) => {
 			dispatch({
 				type: ACTION_TYPES.APPEAL_REASON,
-				payload: data
-			})
-		})
-}
+				payload: data,
+			});
+		});
+};

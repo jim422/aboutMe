@@ -1,27 +1,22 @@
-import React, { Component } from 'react'
-import { Form } from 'antd'
-import UploadComponent from '../components/UploadComponent'
+import React, { Component } from 'react';
+import { Form } from 'antd';
+import UploadComponent from './UploadComponent';
 
 const FormItem = Form.Item;
 
 export default class ScreenshotUpload extends Component {
-	constructor(props) {
-		super(props)
-
-	}
-
 	validator = (rule, value, cb) => {
-
 		if (value === undefined) {
-			cb(rule.message)
+			cb(rule.message);
 		} else if (value.value.length === 0) {
 			value.status === 'uploading'
 				? cb()
-				: cb(rule.message)
+				: cb(rule.message);
 		} else {
-			cb()
+			cb();
 		}
 	}
+
 	render() {
 		const {
 			form: { getFieldDecorator },
@@ -29,7 +24,7 @@ export default class ScreenshotUpload extends Component {
 			uploadProps,
 			required,
 			message,
-			getValueFromEvent
+			getValueFromEvent,
 		} = this.props;
 
 		return (
@@ -38,17 +33,17 @@ export default class ScreenshotUpload extends Component {
 				getFieldDecorator(field, {
 					rules: [{
 						require: required,
-						message: message,
-						validator: this.validator
+						message,
+						validator: this.validator,
 					}],
-					getValueFromEvent: getValueFromEvent
+					getValueFromEvent,
 				})(
 					<UploadComponent
-						uploadProps={ uploadProps }
-					/>
+						uploadProps={uploadProps}
+					/>,
 				)
 			}
 			</FormItem>
-		)
+		);
 	}
 }

@@ -1,14 +1,12 @@
 function validateAll(list) {
-	var result = true;
-	list.forEach(function (validateFn, k) {
-		if (validateFn() == false) {
+	let result = true;
+	list.forEach((validateFn) => {
+		if (validateFn() === false) {
 			result = false;
-			return false
+			return false;
 		}
 	});
-	return result
+	return result;
 }
 
-export {
-	validateAll
-}
+export default validateAll;

@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { Card } from 'antd'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Card } from 'antd';
 
 export default function SkillDescribe(props) {
-	const { title, content, detail} = props
+	const { title, content, detail } = props;
 	return (
 		<div>
 			<Card
-				title={ title }
+				title={title}
 				extra={
 					detail
-						?<Link to={`${detail}`}>detail</Link>
+						? <Link to={`${detail}`}>detail</Link>
 						: null
 				}
 			>
@@ -20,5 +20,5 @@ export default function SkillDescribe(props) {
 			</Card>
 		</div>
 
-	)
+	);
 }

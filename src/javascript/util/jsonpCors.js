@@ -2,40 +2,37 @@ class JsonpCors {
 	defaultProps= {
 		url: 'https://www.baidu.com/s',
 		cb: 'JsonpCors',
-		params: {}
-	}
+		params: {},
+	};
 
 	constructor(props) {
 		Object.assign(this, this.defaultProps, props);
 	}
 
 	fetch() {
-		return new Promise((resolve, reject) => {
+		return new Promise((resolve) => {
+			const script = document.createElement('script');
+			const params = { ...this.params, cb: this.cb };
 			window[this.cb] = function (data) {
 				resolve(data);
-				document.body.removeChild(script)
+				document.body.removeChild(script);
 			};
-			let script = document.createElement('script');
-			let params = {...this.params, cb: this.cb };
-
-			let query = this.serializeKeys(params);
+			const query = serializeKeys(params);
 			script.src = `${this.url}?${query}`;
 
-			document.body.appendChild(script)
-		})
-	}
-
-	serializeKeys(params) {
-		let ary = [];
-		let paramsKeys = Object.keys(params);
-		paramsKeys.forEach((item, key) => {
-			ary.push(`${item}=${params[item]}`)
+			document.body.appendChild(script);
 		});
-
-		return ary.join('&')
 	}
 }
 
-export {
-	JsonpCors
+function serializeKeys(params) {
+	const ary = [];
+	const paramsKeys = Object.keys(params);
+	paramsKeys.forEach((item) => {
+		ary.push(`${item}=${params[item]}`);
+	});
+
+	return ary.join('&');
 }
+
+export default JsonpCors;

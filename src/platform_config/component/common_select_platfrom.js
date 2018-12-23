@@ -1,11 +1,11 @@
-import ko from 'knockout'
-import tpl from './tpl/common_select_platform.tpl'
-import { CommonComponentModel } from './model/common_component_model.js';
-import '../css/modal.css'
+import ko from 'knockout';
+import tpl from './tpl/common_select_platform.tpl';
+import CommonComponentModel from './model/common_component_model';
+import '../css/modal.css';
 
 ko.components.register('common-select-platform', {
-	viewModel: function (params) {
-		var self = this;
+	viewModel (params) {
+		const self = this;
 		CommonComponentModel.call(self, params);
 		self.platformList = params.platformList;
 		self.platform_name = params.platform_name;
@@ -13,9 +13,9 @@ ko.components.register('common-select-platform', {
 		self.showPlatformList = params.showPlatformList;
 		self.validate_list.push(params.validate.bind(this));
 		self.data_target = params.data_target;
-		self.value.subscribe(function (value) {
-			params.validate.call(self)
-		})
+		self.value.subscribe(() => {
+			params.validate.call(self);
+		});
 	},
-	template: tpl()
+	template: tpl(),
 });

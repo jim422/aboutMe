@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class PageB extends Component {
 	render() {
@@ -6,8 +6,8 @@ class PageB extends Component {
 			<section
 				className="page-b bg-adaptive"
 			/>
-		)
+		);
 	}
 }
 
-export default PageB
+export default PageB;

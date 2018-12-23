@@ -18,5 +18,5 @@ export const uselessFields = [
 	'showPlatformList',
 	'serializeLink',
 	'serializeRecordItems',
-	'validateLink'
+	'validateLink',
 ];

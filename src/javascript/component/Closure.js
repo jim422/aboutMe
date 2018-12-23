@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default function Closure(props) {
+const closure = require('../assets/closure_1.png');
+
+export default function Closure() {
 	return (
 		<div className='javascript-container'>
 			<h3>闭包</h3>
 			<p>我觉得对于前端来说这个话题是逃避不了的，而且这种东西很难用离两句话讲清楚，总感觉闭包是js的一个隐蔽的一面，所以我们从下面的一段js代码开始</p>
-			<img src={ require('../assets/closure_1.png') } className='img-container'/>
+			<img src={closure} className='img-container' />
 			<p>
 				函数rem的作用域能够访问foo的内部作用域，然后把rem函数本身当作了foo函数的返回值，在foo函数执行后预期将rem返回，并将其引用地址赋值给了bar，然后执行。
 
@@ -15,5 +17,5 @@ export default function Closure(props) {
 			</p>
 
 		</div>
-	)
+	);
 }

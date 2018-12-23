@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import '../css/Carousel.css'
+import '../css/Carousel.css';
 
 const dpr = 0.5;
 export default class Carousel extends Component {
@@ -18,19 +18,20 @@ export default class Carousel extends Component {
 		z: 800,
 		current: 0,
 	};
+
 	constructor(props) {
-		super(props)
+		super(props);
 		this.setLengthAndAngle(props);
 		this.state = {
 			rotate: -props.current * this.angle,
 			current: props.current,
-			transition: 'none'
-		}
+			transition: 'none',
+		};
 	}
 
 	componentDidMount() {
 		this.w = document.body.clientWidth;
-		window.addEventListener('mouseup', this.onTouchEnd)
+		window.addEventListener('mouseup', this.onTouchEnd);
 	}
 
 	componentWillReceiveProps(nextProps) {
@@ -57,6 +58,7 @@ export default class Carousel extends Component {
 		this.startX = e.pageX || e.touches[0].pageX;
 		this.startRotate = Math.round(this.state.rotate / this.angle) * this.angle; // 偏移修复;
 	}
+
 	onTouchMove = (e) => {
 		if (e.touches && e.touches.length > 1 || this.length <= 1 || !this.startX) {
 			return;
@@ -78,6 +80,7 @@ export default class Carousel extends Component {
 			});
 		});
 	}
+
 	onTouchEnd = (e) => {
 		if (e.changedTouches && e.changedTouches.length > 1 || this.length <= 1 || !this.startX) {
 			return;
@@ -86,8 +89,8 @@ export default class Carousel extends Component {
 		const differ = x - this.startX;
 		const { current, rotate } = this.state;
 		const n = differ > 0 ? 1 : -1;
-		const newRotate = this.startRotate + n * this.angle *
-			Math.round(Math.abs((rotate - this.startRotate) / this.angle));
+		const newRotate = this.startRotate + n * this.angle
+			* Math.round(Math.abs((rotate - this.startRotate) / this.angle));
 		this.setState({
 			rotate: newRotate,
 			transition: `transform ${this.props.duration} ${this.props.ease}`,
@@ -100,11 +103,13 @@ export default class Carousel extends Component {
 			});
 		});
 	}
+
 	setLengthAndAngle = (props) => {
 		this.length = React.Children.toArray(props.children).length;
 		this.length = this.length > props.childMaxLength ? props.childMaxLength : this.length;
 		this.angle = 360 / this.length;
 	}
+
 	getAnimStyle = (n, length) => {
 		const { opacityBasics, opacityDecline, blurIncrease } = this.props;
 		const center = length / 2;
@@ -119,6 +124,7 @@ export default class Carousel extends Component {
 		}
 		return d;
 	}
+
 	getChildrenToRender = (children) => {
 		const { childMaxLength, z } = this.props;
 		const newChildren = React.Children.toArray(children);
@@ -131,10 +137,10 @@ export default class Carousel extends Component {
 			const transform = `rotateY(${this.angle * i}deg) translateZ(${zDpr}px) rotateY(-${this.angle * i}deg) `;
 			const animStyle = this.getAnimStyle(
 				Math.abs(this.state.current - i),
-				length > childMaxLength ? childMaxLength : length
+				length > childMaxLength ? childMaxLength : length,
 			);
 			const style = {
-				transform
+				transform,
 			};
 			return (
 				<div
@@ -163,6 +169,7 @@ export default class Carousel extends Component {
 			);
 		});
 	}
+
 	render() {
 		const { onChange, ...props } = this.props;
 		const {

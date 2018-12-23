@@ -1,7 +1,7 @@
-import NavBar from './navBar'
-import { Routes } from './Routes';
+import NavBar from './NavBar';
+import Routes from './Routes';
 
 export {
 	NavBar,
-	Routes
-}
+	Routes,
+};

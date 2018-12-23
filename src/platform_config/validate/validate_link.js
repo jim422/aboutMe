@@ -1,25 +1,25 @@
 function validateLink() {
-	var self = this;
-	var result = true;
-	if (this.required() == true && this.user_input().length > 0) {
-		this.user_input().forEach(function (v, k) {
+	const self = this;
+	let result = true;
+	if (this.required() === true && this.user_input().length > 0) {
+		this.user_input().forEach((v) => {
 			if (v.link().replace(/(^\s+)|(\s+$)/g, '').length > 0) {
-				self.validate_tip('')
+				self.validate_tip('');
 			} else {
 				self.validate_tip(self.error_tip);
 				result = false;
-				return false
+				return false;
 			}
-		})
-	} else if (this.required() == true && this.user_input().length == 0) {
+		});
+	} else if (this.required() === true && this.user_input().length === 0) {
 		self.validate_tip(self.error_tip);
-		result = false
+		result = false;
 	} else {
-		result = true
+		result = true;
 	}
-	return result
+	return result;
 }
 
 export {
-	validateLink
-}
+	validateLink,
+};

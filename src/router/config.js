@@ -1,16 +1,15 @@
 //组件
-import AboutMe from '../about_me/index.js'
-import PlatformConfig from '../platform_config/PlatformConfig'
-import Appeal from '../appeal/index'
-import JavaScript from '../javascript/index'
-import H5 from '../h5/index'
-import React from 'react';
-import Scope from '../javascript/component/Scope'
-import Closure from '../javascript/component/Closure'
-import Listener from '../javascript/component/Listener'
-import Cors from '../javascript/component/Cors'
+import AboutMe from '../about_me/index';
+import PlatformConfig from '../platform_config/PlatformConfig';
+import Appeal from '../appeal/index';
+import JavaScript from '../javascript/index';
+import H5 from '../h5/index';
+import Scope from '../javascript/component/Scope';
+import Closure from '../javascript/component/Closure';
+import Listener from '../javascript/component/Listener';
+import Cors from '../javascript/component/Cors';
 
-let config = {
+const config = {
 	routes: [{
 		path: '/aboutMe',
 		exact: true,
@@ -22,8 +21,8 @@ let config = {
 			path: '/knockout/platformConfig',
 			exact: true,
 			component: PlatformConfig,
-			title: '平台配置'
-		}]
+			title: '平台配置',
+		}],
 	}, {
 		path: '/react/appeal',
 		exact: true,
@@ -40,8 +39,8 @@ let config = {
 			path: '/javascript',
 			exact: true,
 			component: JavaScript,
-			title: 'javascript'
-		},{
+			title: 'javascript',
+		}, {
 			path: '/javascript/scope',
 			exact: true,
 			component: Scope,
@@ -68,4 +67,4 @@ let config = {
 
 export {
 	config,
-}
+};

@@ -3,15 +3,17 @@ import BannerAnim from 'rc-banner-anim';
 import QueueAnim from 'rc-queue-anim';
 import { TweenOneGroup } from 'rc-tween-one';
 import { Icon } from 'antd';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import { CommonModal } from '../../module_common/react_modal/common_modal';
 import '../css/ProjectDescribe.css';
 
 const Element = BannerAnim.Element;
+const appealImg = require('../assets/appeal.jpg');
+const platformConfig = require('../assets/platformConfig.jpg');
 
-let dataArray = [
+const dataArray = [
 	{
-		pic: require('../assets/appeal.jpg'),
+		pic: appealImg,
 		title: '账号申诉',
 		content: '根据平台的配置项展示用户需要输入的内容, 运用到的技术有 react + redux + antd',
 		detail: '/react/appeal',
@@ -19,7 +21,7 @@ let dataArray = [
 		background: '#F6B429',
 	},
 	{
-		pic: require('../assets/platformConfig.jpg'),
+		pic: platformConfig,
 		title: '平台配置',
 		content: '为了灵活的配置各平台的执行结果和数据截图，减少开发工作，提高效率，新增执行结果和数据截图配置功能。',
 		detail: '/knockout/platformConfig',
@@ -43,7 +45,7 @@ export default class DetailSwitchDemo extends React.Component {
 				{ translateX: [0, -300], opacity: [1, 0] },
 			],
 			visible: false,
-			modalChildren: null
+			modalChildren: null,
 		};
 		this.oneEnter = false;
 	}
@@ -95,19 +97,19 @@ export default class DetailSwitchDemo extends React.Component {
 	showInModal = (e) => {
 		this.setState({
 			visible: true,
-			modalChildren: <img src={e.target.getAttribute('src')} alt=""/>
-		})
+			modalChildren: <img src={e.target.getAttribute('src')} alt="" />,
+		});
 	};
 
 	closeModal = () => {
 		this.setState({
-			visible: false
-		})
+			visible: false,
+		});
 	};
 
 	render() {
 		const imgChildren = dataArray.map((item, i) => (
-			<Element key={i} style={{ background: item.color }} leaveChildHide>
+			<Element key={item.title} style={{ background: item.color }} leaveChildHide>
 				<QueueAnim
 					animConfig={this.state.imgAnim}
 					duration={this.getDuration}
@@ -115,8 +117,13 @@ export default class DetailSwitchDemo extends React.Component {
 					ease={['easeOutCubic', 'easeInQuad']}
 					key="img-wrapper"
 				>
-					<div className={`${this.props.className}-pic pic${i}`} key="pic">
-						<img src={item.pic} width="100%" onClick={this.showInModal}/>
+					<div
+						className={`${this.props.className}-pic pic${i}`}
+						key="pic"
+						onClick={() => {}}
+						onKeyDown={this.showInModal}
+					>
+						<img src={item.pic} width="100%" />
 					</div>
 				</QueueAnim>
 			</Element>));
@@ -124,24 +131,28 @@ export default class DetailSwitchDemo extends React.Component {
 		const textChildren = dataArray.map((item, i) => {
 			const { title, content, background } = item;
 
-			return (<Element key={i}>
-				<QueueAnim type="bottom" duration={1000} delay={[!i ? this.state.delay + 500 : 800, 0]}>
-					<h1 key="h1">{title}</h1>
-					<em key="em" style={{ background }} />
-					<p key="p">
-						{content}
-						{
-							item.detail
+			return (
+				<Element key={item.title}>
+					<QueueAnim type="bottom" duration={1000} delay={[!i ? this.state.delay + 500 : 800, 0]}>
+						<h1 key="h1">{title}</h1>
+						<em key="em" style={{ background }} />
+						<p key="p">
+							{content}
+							{
+								item.detail
 								&& <Link to={item.detail}>详情</Link>
-						}</p>
+							}
+						</p>
 
-				</QueueAnim>
-			</Element>);
+					</QueueAnim>
+				</Element>
+);
 		});
-		return (<div
+		return (
+<div
 			className={`${this.props.className}-wrapper`}
 			style={{ background: dataArray[this.state.showInt].background }}
-		>
+>
 			<div className={this.props.className}>
 				<BannerAnim
 					prefixCls={`${this.props.className}-img-wrapper`}
@@ -186,6 +197,7 @@ export default class DetailSwitchDemo extends React.Component {
 			>
 				{this.state.modalChildren}
 			</CommonModal>
-		</div>);
+</div>
+);
 	}
 }

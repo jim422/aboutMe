@@ -1,31 +1,28 @@
 function validateBeforeUpload(file, fileList) {
-	let accept = this.accept;
+	const accept = this.accept;
 
-	if (accept.includes(file.type)){
-		return true
+	if (accept.includes(file.type)) {
+		return true;
 	}
 
 	if (exceedMaxSize(this.maxSize, file.size)) {
-		return true
+		return true;
 	}
 
 	if (fileList.length <= this.limit) {
-		return true
+		return true;
 	}
 
-	return false
+	return false;
 }
 
 function exceedMaxSize(maxSize, fileSize) {
-	let MaxMB = Number(maxSize) * 1024 * 1024;
+	const MaxMB = Number(maxSize) * 1024 * 1024;
 
 	if (fileSize > MaxMB) {
-		return false
-	} else {
-		return true
+		return false;
 	}
+		return true;
 }
 
-export {
-	validateBeforeUpload
-}
+export default validateBeforeUpload;

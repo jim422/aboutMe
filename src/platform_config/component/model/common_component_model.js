@@ -11,6 +11,4 @@ function CommonComponentModel(params) {
 	this.readonly = params.readonly || ko.observable(false);
 }
 
-export {
-	CommonComponentModel
-}
+export default CommonComponentModel;

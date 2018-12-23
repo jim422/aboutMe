@@ -1,12 +1,12 @@
-import ko from 'knockout'
+import ko from 'knockout';
 import tpl from './tpl/common_record_items.tpl';
-import { CommonComponentModel } from './model/common_component_model.js';
+import CommonComponentModel from './model/common_component_model';
 
 ko.components.register('common-record-items', {
-	viewModel: function (params) {
+	viewModel (params) {
 		CommonComponentModel.call(this, params);
 		this.record_items = params.record_items;
-		this.serialize_data_list.push(params.serialize.bind(this))
+		this.serialize_data_list.push(params.serialize.bind(this));
 	},
-	template: tpl()
+	template: tpl(),
 });

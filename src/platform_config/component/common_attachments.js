@@ -4,8 +4,8 @@ import tpl from './tpl/common_attachments.tpl';
 import '../../../node_modules/webuploader/dist/webuploader.css';
 
 ko.components.register('common-attachments', {
-	viewModel: function (params) {
-		var self = this;
+	viewModel (params) {
+		const self = this;
 		Object.assign(self, params);
 		self.upload_url = params.upload_url;
 		self.upload_limit = params.upload_limit || 1;
@@ -20,15 +20,15 @@ ko.components.register('common-attachments', {
 
 		self.uploader = setUploaderCfg(self);
 		self.deleteFile = deleteFile;
-		self.upload_btn_visible = ko.computed(uploadBtnVisible.bind(self))
+		self.upload_btn_visible = ko.computed(uploadBtnVisible.bind(self));
 	},
-	template: tpl()
+	template: tpl(),
 });
 
 function setUploaderCfg(params) {
-	var uploader = webUploader.create({
+	const uploader = webUploader.create({
 		pick: {
-			id: '#' + params.id + ' .js_upload',
+			id: `#${params.id} .js_upload`,
 			label: '上传',
 		},
 		formData: {
@@ -49,31 +49,31 @@ function setUploaderCfg(params) {
 	});
 
 	uploader.onFileQueued = function (file) {
-		//加入队列前触发
-		uploader.makeThumb(file, function (err, src) {
+		// 加入队列前触发
+		uploader.makeThumb(file, (err, src) => {
 			file.src = src;
 
-			params.attachments_list_for_show.push(file)
+			params.attachments_list_for_show.push(file);
 		});
 	};
 
 	uploader.onFileDequeued = function (file) {
-		console.log(file)
+		console.log(file);
 	};
 
 	uploader.onUploadStart = function (file) {
-		//设置需要显示loading的ID
-		params.uploading_file_id(file.id)
+		// 设置需要显示loading的ID
+		params.uploading_file_id(file.id);
 	};
 
-	uploader.onUploadComplete = function (file) {
-		//隐藏loading图标
-		params.uploading_file_id('')
+	uploader.onUploadComplete = function () {
+		// 隐藏loading图标
+		params.uploading_file_id('');
 	};
 
 	uploader.onUploadSuccess = function (file, response) {
 		if (response.code === 1000) {
-			params.attachments.push(response.data)
+			params.attachments.push(response.data);
 		}
 	};
 
@@ -82,20 +82,17 @@ function setUploaderCfg(params) {
 
 function deleteFile(parent, index) {
 	parent.uploader.removeFile(this);
-	//从数据列表中删除
+	// 从数据列表中删除
 	parent.attachments.splice(index, 1);
 
-	//从UI列表中删除
-	parent.attachments_list_for_show.splice(index, 1)
+	// 从UI列表中删除
+	parent.attachments_list_for_show.splice(index, 1);
 }
 
 function uploadBtnVisible() {
-	var self = this;
+	const self = this;
 	if (self.readonly === false) {
-		return self.attachments().length >= self.upload_limit
-			? false
-			: true
-	} else {
-		return true
+		return !(self.attachments().length >= self.upload_limit);
 	}
+		return true;
 }

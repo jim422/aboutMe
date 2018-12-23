@@ -1,9 +1,5 @@
 function serializeAttachments() {
-	var result = false;
-
-	return this.attachments().map(item => item.filePath)
+	return this.attachments().map(item => item.filePath);
 }
 
-export {
-	serializeAttachments
-}
+export default serializeAttachments;
