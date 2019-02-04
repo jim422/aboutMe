@@ -48,11 +48,10 @@ module.exports = {
 				"every": ["id"]
 			}
 		}], // for nested label htmlFor error
-		allowIndentationTabs: true,
+		"allowIndentationTabs": true,
 		"default-case": ["off", { "commentPattern": "^skip\\sdefault" }],
 		"no-tabs": "off",
 		"indent": "off",
-		"no-use-before-define": ["error", { "functions": false, "classes": true }],
 		"spaced-comment": "off",
 		"consistent-return": "off",
 		"react/jsx-indent-props": ["off", "tab"],
@@ -70,7 +69,10 @@ module.exports = {
 		"react/no-unescaped-entities": "off",
 		"react/no-access-state-in-setstate": "off",
 		"no-trailing-spaces": "off",
-		"react/button-has-type": "off"
-		//'prettier/prettier': ['error'],
+		"no-useless-constructor": "off",
+		"no-use-before-define": "off",
+		"func-names": "off",
+		"max-lines": ["warn", 250],
+		"max-statements": ["warn", 50]
 	}
 };

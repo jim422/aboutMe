@@ -57,21 +57,21 @@ function setUploaderCfg(params) {
 		});
 	};
 
-	uploader.onFileDequeued = function (file) {
+	uploader.onFileDequeued = function onFileDequeued (file) {
 		console.log(file);
 	};
 
-	uploader.onUploadStart = function (file) {
+	uploader.onUploadStart = function onUploadStart (file) {
 		// 设置需要显示loading的ID
 		params.uploading_file_id(file.id);
 	};
 
-	uploader.onUploadComplete = function () {
+	uploader.onUploadComplete = function onUploadComplete () {
 		// 隐藏loading图标
 		params.uploading_file_id('');
 	};
 
-	uploader.onUploadSuccess = function (file, response) {
+	uploader.onUploadSuccess = function onUploadSuccess (file, response) {
 		if (response.code === 1000) {
 			params.attachments.push(response.data);
 		}

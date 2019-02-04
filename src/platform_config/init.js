@@ -82,7 +82,6 @@ function submit() {
 
 	UIkit.modal.confirm('确认提交该平台配置信息？').then(() => {
 		const data = serializeData(self);
-		console.log(data);
 		fetchConfigItems(data);
 	});
 }

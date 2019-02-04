@@ -212,7 +212,13 @@ class PlatformConfig extends Component {
         <th />
         <td>
           <br />
-          <button className="uk-button uk-button-primary" data-bind="click: submit">提交</button>
+          <button
+            className="uk-button uk-button-primary"
+            data-bind="click: submit"
+            type='submit'
+          >
+            提交
+          </button>
         </td>
       </tr>
     </tbody>

@@ -7,7 +7,7 @@ ko.components.register('common-platform-list', {
 		this.platform_id = params.data.platform_id;
 		this.platform_name = params.data.platform_name;
 		this.select_platform = selectPlatform;
-		this.icon = function(weiboType) {
+		this.icon = function icon (weiboType) {
 			return `http://localhost:9090/src/assets/image/icon_${weiboType}.png`;
 		};
 	},
