@@ -72,6 +72,8 @@ module.exports = {
 		"no-useless-constructor": "off",
 		"no-use-before-define": "off",
 		"func-names": "off",
+		"click-events-have-key-events": "off", //Enforce onClick is accompanied by at least one of the following: onKeyUp, onKeyDown, onKeyPress
+		"no-multi-comp": "off",
 		"max-lines": ["warn", 250],
 		"max-statements": ["warn", 50]
 	}
