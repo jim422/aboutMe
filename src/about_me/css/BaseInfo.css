@@ -57,3 +57,13 @@
 .info-item .anticon {
     padding-right: 5px;
 }
+.canvas-container {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    width: 1000px;
+    height: 700px;
+}
+.canvas {
+    position: absolute;
+}

@@ -19,7 +19,6 @@ class AboutMe extends Component {
 					<ScrollLink to="page2" showHeightActive={['30%', '70%']} toHash={false} />
 					<ScrollLink to="page3" showHeightActive="70%" toHash={false} />
 				</div>
-
 				<div className='home-page-wrapper page-first'>
 					<BaseInfo />
 				</div>

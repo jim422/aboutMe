@@ -74,6 +74,15 @@ module.exports = {
 		"func-names": "off",
 		"click-events-have-key-events": "off", //Enforce onClick is accompanied by at least one of the following: onKeyUp, onKeyDown, onKeyPress
 		"no-multi-comp": "off",
+		"react/jsx-tag-spacing": "off",
+		"comma-dangle": "off", //要求或禁止使用拖尾逗号
+		"padded-blocks": "off", //要求或禁止块内填充
+		"prefer-const": "off",
+		"no-proto": "off",
+		"eol-last": "off",
+		"no-var": "off",
+		"vars-on-top": "off", //要求所有的 var 声明出现在它们所在的作用域顶部
+		"no-continue": "off",
 		"max-lines": ["warn", 250],
 		"max-statements": ["warn", 50]
 	}
