@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { drawTree, flowerFall } from '../util/drawTree';
 
-const WIDTH = 800;
-const HEIGHT = 500;
+const WIDTH = window.innerWidth;
+const HEIGHT = window.innerHeight;
 
 class Tree extends Component {
 	componentDidMount() {
@@ -17,7 +17,7 @@ class Tree extends Component {
 		flowerDom.width = WIDTH;
 		flowerDom.height = HEIGHT;
 
-		drawTree(WIDTH / 2, HEIGHT, -Math.PI / 2, 30, ctx);
+		drawTree(WIDTH / 3, HEIGHT, -Math.PI / 2, 31, ctx);
 
 		requestAnimationFrame(() => {
 			flowerFall(flowerCtx, WIDTH, HEIGHT);
@@ -28,11 +28,6 @@ class Tree extends Component {
 		return (
 			<div
 				className='canvas-container'
-				style={{
-					position: 'absolute',
-					top: '290px',
-					left: '20px'
-				}}
 			>
 				<canvas
 					id='tree'

@@ -10,9 +10,9 @@ let fallList = [];
 function drawTree(x, y, deg, step, ctx) {
 	let deg1 = step % 2 === 0 ? 0.1 : -0.1;
 	let x1 = x + Math.cos(deg + deg1) * (step + 4) * 0.8; //以步长来判断枝干长度 x轴偏移大一些
-	let y1 = y + Math.sin(deg + deg1) * step; //以步长来判断枝干长度 Y轴压缩一些
+	let y1 = y + Math.sin(deg + deg1) * (step + 2); //以步长来判断枝干长度 Y轴压缩一些
 	ctx.beginPath();
-	ctx.lineWidth = step / 2;
+	ctx.lineWidth = step * 0.7;
 	ctx.moveTo(x, y);
 	ctx.lineTo(x1, y1);
 	ctx.strokeStyle = TREE_COLOR;
@@ -28,7 +28,7 @@ function drawTree(x, y, deg, step, ctx) {
 	//在末端五个节点，画一个半圆，作为樱花效果
 	if (step < 3 || (step < 23 && Math.random() > 0.1)) {
 		let r = Math.random() * 2 + 2;
-		let color = `rgba(${Math.round(Math.random() * (255 - 240) + 240)}, 158, 194, 0.5)`;
+		let color = `rgba(${Math.round(Math.random() * (255 - 240) + 240)}, 158, 194, 0.8)`;
 		ctx.fillStyle = color;
 		ctx.arc(x1 + Math.random() * 3, y1 + Math.random() * 3, r, 0, Math.PI);
 		ctx.fill();
