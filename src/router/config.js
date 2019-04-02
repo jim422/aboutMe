@@ -1,5 +1,5 @@
 //组件
-import AboutMe from '../about_me/index';
+import Home from '../home/index';
 import PlatformConfig from '../platform_config/PlatformConfig';
 import Appeal from '../appeal/index';
 import JavaScript from '../javascript/index';
@@ -11,10 +11,10 @@ import Cors from '../javascript/component/Cors';
 
 const config = {
 	routes: [{
-		path: '/aboutMe',
+		path: '/home',
 		exact: true,
-		component: AboutMe,
-		title: 'aboutMe',
+		component: Home,
+		title: 'home',
 	}, {
 		title: 'knockout',
 		children: [{

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Menu } from 'antd';
+import { Menu, Button } from 'antd';
 import { config } from './config';
 
 const SubMenu = Menu.SubMenu;
@@ -56,9 +56,12 @@ class NavBar extends Component {
 					{
 						this.createNavBar(config.routes)
 					}
-
 				</Menu>
 
+				<div className='login'>
+					<Button type='primary'>登陆</Button>
+					<Button>注册</Button>
+				</div>
 			</div>
 		);
 	}

@@ -32,6 +32,21 @@ ul li {
     background: -moz-linear-gradient(white, #f5fefe); /* Firefox 3.6 - 15 */
     background: linear-gradient(white, #f5fefe); /* 标准的语法 */
 }
+.navbar {
+    position: relative;
+    width: 100%;
+}
+.login {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login button {
+    margin-right: 20px;
+}
+
 .navbar ul{
     background-color: rgba(0, 0, 0, 0);
 }
